@@ -1,0 +1,10 @@
+,total_records,total_columns,numeric_columns,categorical_columns,missing_values,missing_percentage,duplicate_rows
+vendors,50.0,18.0,8.0,10.0,13.0,1.4444444444444444,0.0
+customers,500.0,15.0,4.0,11.0,0.0,0.0,0.0
+products,274.0,15.0,2.0,12.0,0.0,0.0,0.0
+licenses,3920.0,44.0,27.0,17.0,3443.0,1.996173469387755,0.0
+usage_history,76441.0,16.0,10.0,6.0,0.0,0.0,0.0
+renewal_history,5873.0,16.0,6.0,7.0,0.0,0.0,0.0
+customer_summary,500.0,9.0,8.0,1.0,0.0,0.0,0.0
+product_performance,274.0,8.0,7.0,1.0,0.0,0.0,0.0
+vendor_performance,50.0,7.0,6.0,1.0,0.0,0.0,0.0

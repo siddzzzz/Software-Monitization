@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Monetization Analytics Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to bottom right, #f0f7ff, #e0e7ff);
+        }
+        .sidebar {
+            background: linear-gradient(180deg, #1e3a8a 0%, #2563eb 100%);
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-radius: 12px;
+            background: white;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+        .metric-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .visualization-container {
+            max-height: 700px;
+            overflow-y: auto;
+            border-radius: 12px;
+            background: white;
+        }
+        .analysis-button {
+            background: linear-gradient(to right, #3b82f6, #1d4ed8);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .analysis-button:hover {
+            background: linear-gradient(to right, #1d4ed8, #1e40af);
+            transform: scale(1.05);
+        }
+        .dropdown-button {
+            background: #e5e7eb;
+            color: #1f2937;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+        .dropdown-button:hover {
+            background: #d1d5db;
+        }
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3b82f6;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex">
+    <!-- Sidebar -->
+    <aside class="sidebar w-72 p-8 text-white fixed h-full">
+        <h1 class="text-3xl font-bold mb-10 tracking-tight">Analytics Dashboard</h1>
+        <nav>
+            <ul class="space-y-6">
+                <li><a href="#analysis-buttons" class="hover:text-blue-200 text-lg font-medium transition-colors">Analysis Selection</a></li>
+                <li><a href="#results" class="hover:text-blue-200 text-lg font-medium transition-colors">Results</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="ml-72 p-10 flex-1">
+        <!-- Header -->
+        <header class="mb-10">
+            <h1 class="text-4xl font-extrabold text-gray-800 tracking-tight">Software Monetization Analytics</h1>
+            <p class="text-lg text-gray-600 mt-2">Explore insights with interactive data analysis</p>
+        </header>
+
+        <!-- Analysis Buttons -->
+        <section id="analysis-buttons" class="mb-12">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Select Analysis</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <button class="analysis-button" onclick="runAnalysis('overview')">Dataset Overview</button>
+                <div class="relative">
+                    <button class="analysis-button w-full" id="missing-data-button">Missing Data</button>
+                    <div class="absolute hidden bg-white shadow-xl rounded-lg mt-2 w-full z-10" id="missing-data-dropdown">
+                        <button class="dropdown-button block w-full text-left px-4 py-3" onclick="runAnalysis('missing-data', 'licenses')">Licenses</button>
+                        <button class="dropdown-button block w-full text-left px-4 py-3" onclick="runAnalysis('missing-data', 'customers')">Customers</button>
+                        <button class="dropdown-button block w-full text-left px-4 py-3" onclick="runAnalysis('missing-data', 'vendors')">Vendors</button>
+                        <button class="dropdown-button block w-full text-left px-4 py-3" onclick="runAnalysis('missing-data', 'products')">Products</button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <button class="analysis-button w-full" id="distributions-button">Distributions</button>
+                    <div class="absolute hidden bg-white shadow-xl rounded-lg mt-2 w-full z-10" id="distributions-dropdown">
+                        <button class="dropdown-button block w-full text-left px-4 py-3" onclick="runAnalysis('distributions', 'licenses')">Licenses</button>
+                        <button class="dropdown-button block w-full text-left px-4 py-3" onclick="runAnalysis('distributions', 'customers')">Customers</button>
+                        <button class="dropdown-button block w-full text-left px-4 py-3" onclick="runAnalysis('distributions', 'vendors')">Vendors</button>
+                        <button class="dropdown-button block w-full text-left px-4 py-3" onclick="runAnalysis('distributions', 'products')">Products</button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <button class="analysis-button w-full" id="correlations-button">Correlations</button>
+                    <div class="absolute hidden bg-white shadow-xl rounded-lg mt-2 w-full z-10" id="correlations-dropdown">
+                        <button class="dropdown-button block w-full text-left px-4 py-3" onclick="runAnalysis('correlations', 'licenses')">Licenses</button>
+                        <button class="dropdown-button block w-full text-left px-4 py-3" onclick="runAnalysis('correlations', 'customers')">Customers</button>
+                        <button class="dropdown-button block w-full text-left px-4 py-3" onclick="runAnalysis('correlations', 'vendors')">Vendors</button>
+                        <button class="dropdown-button block w-full text-left px-4 py-3" onclick="runAnalysis('correlations', 'products')">Products</button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <button class="analysis-button w-full" id="anomalies-button">Anomalies</button>
+                    <div class="absolute hidden bg-white shadow-xl rounded-lg mt-2 w-full z-10" id="anomalies-dropdown">
+                        <button class="dropdown-button block w-full text-left px-4 py-3" onclick="runAnalysis('anomalies', 'licenses')">Licenses</button>
+                        <button class="dropdown-button block w-full text-left px-4 py-3" onclick="runAnalysis('anomalies', 'customers')">Customers</button>
+                        <button class="dropdown-button block w-full text-left px-4 py-3" onclick="runAnalysis('anomalies', 'vendors')">Vendors</button>
+                        <button class="dropdown-button block w-full text-left px-4 py-3" onclick="runAnalysis('anomalies', 'products')">Products</button>
+                    </div>
+                </div>
+                <button class="analysis-button" onclick="runAnalysis('customer-segmentation')">Customer Segmentation</button>
+                <button class="analysis-button" onclick="runAnalysis('interactive-dashboard')">Interactive Dashboard</button>
+            </div>
+        </section>
+
+        <!-- Analysis Results -->
+        <section id="results" class="mb-12">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-800">Analysis Results</h2>
+            <div class="metric-card mb-6 hidden" id="execution-time">
+                <h3 class="text-lg font-medium text-gray-600">Execution Time</h3>
+                <p class="text-2xl font-bold text-blue-600" id="execution-time-value"></p>
+            </div>
+            <div class="card p-6 hidden" id="overview-section">
+                <canvas id="overview-chart"></canvas>
+            </div>
+            <div class="visualization-container p-6 hidden" id="visualization-section">
+                <div id="visualization-content"></div>
+            </div>
+            <div class="card p-6 hidden overflow-x-auto" id="summary-section">
+                <table class="w-full">
+                    <thead>
+                        <tr class="bg-gray-100">
+                            <th class="p-3 text-left text-gray-700 font-semibold">Dataset</th>
+                            <th class="p-3 text-left text-gray-700 font-semibold">Statistical Outliers</th>
+                            <th class="p-3 text-left text-gray-700 font-semibold">Isolation Forest Outliers</th>
+                            <th class="p-3 text-left text-gray-700 font-semibold">Total Records</th>
+                        </tr>
+                    </thead>
+                    <tbody id="summary-table-body"></tbody>
+                </table>
+            </div>
+            <div class="text-center hidden" id="loading">
+                <div class="loader"></div>
+                <p class="text-gray-600 mt-4">Processing analysis...</p>
+            </div>
+            <div class="text-center text-red-600 hidden" id="error-message"></div>
+        </section>
+    </main>
+
+    <script>
+        // Global variable to store Chart instance
+        let overviewChart = null;
+
+        // Toggle dropdown menus
+        const buttons = ['missing-data', 'distributions', 'correlations', 'anomalies'];
+        buttons.forEach(type => {
+            const button = document.getElementById(`${type}-button`);
+            const dropdown = document.getElementById(`${type}-dropdown`);
+            button.addEventListener('click', (e) => {
+                e.stopPropagation();
+                buttons.forEach(t => {
+                    if (t !== type) document.getElementById(`${t}-dropdown`).classList.add('hidden');
+                });
+                dropdown.classList.toggle('hidden');
+            });
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (e) => {
+            buttons.forEach(type => {
+                const dropdown = document.getElementById(`${type}-dropdown`);
+                if (!dropdown.contains(e.target) && !document.getElementById(`${type}-button`).contains(e.target)) {
+                    dropdown.classList.add('hidden');
+                }
+            });
+        });
+
+        // Reset UI state
+        function resetUI() {
+            const executionTimeDiv = document.getElementById('execution-time');
+            const overviewSection = document.getElementById('overview-section');
+            const visualizationSection = document.getElementById('visualization-section');
+            const summarySection = document.getElementById('summary-section');
+            const loadingDiv = document.getElementById('loading');
+            const errorDiv = document.getElementById('error-message');
+            const visualizationContent = document.getElementById('visualization-content');
+            const summaryTableBody = document.getElementById('summary-table-body');
+
+            executionTimeDiv.classList.add('hidden');
+            overviewSection.classList.add('hidden');
+            visualizationSection.classList.add('hidden');
+            summarySection.classList.add('hidden');
+            loadingDiv.classList.add('hidden');
+            errorDiv.classList.add('hidden');
+            visualizationContent.innerHTML = '';
+            summaryTableBody.innerHTML = '';
+            if (overviewChart) {
+                overviewChart.destroy();
+                overviewChart = null;
+            }
+        }
+
+        // Run analysis and display results
+        async function runAnalysis(type, dataset = '') {
+            resetUI();
+
+            const loadingDiv = document.getElementById('loading');
+            const errorDiv = document.getElementById('error-message');
+            const executionTimeDiv = document.getElementById('execution-time');
+            const overviewSection = document.getElementById('overview-section');
+            const visualizationSection = document.getElementById('visualization-section');
+            const summarySection = document.getElementById('summary-section');
+            const resultsSection = document.getElementById('results');
+
+            loadingDiv.classList.remove('hidden');
+            resultsSection.scrollIntoView({ behavior: 'smooth' });
+
+            const url = dataset ? `/api/${type}/${dataset}` : `/api/${type}`;
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 30000);
+                const response = await fetch(url, { signal: controller.signal });
+                clearTimeout(timeoutId);
+
+                const result = await response.json();
+
+                if (response.status !== 200) {
+                    throw new Error(result.error || 'Analysis failed');
+                }
+
+                loadingDiv.classList.add('hidden');
+
+                document.getElementById('execution-time-value').textContent = `${result.execution_time.toFixed(2)} min`;
+                executionTimeDiv.classList.remove('hidden');
+
+                if (type === 'overview') {
+                    overviewSection.classList.remove('hidden');
+                    const ctx = document.getElementById('overview-chart').getContext('2d');
+                    overviewChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: result.data.map(item => item.Dataset),
+                            datasets: [{
+                                label: 'Rows',
+                                data: result.data.map(item => item.Rows),
+                                backgroundColor: 'rgba(59, 130, 246, 0.5)',
+                                borderColor: 'rgba(59, 130, 246, 1)',
+                                borderWidth: 1
+                            }, {
+                                label: 'Columns',
+                                data: result.data.map(item => item.Columns),
+                                backgroundColor: 'rgba(236, 72, 153, 0.5)',
+                                borderColor: 'rgba(236, 72, 153, 1)',
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            scales: {
+                                y: { beginAtZero: true, title: { display: true, text: 'Count' } },
+                                x: { title: { display: true, text: 'Dataset' } }
+                            },
+                            plugins: { legend: { position: 'top' } }
+                        }
+                    });
+                } else if (type === 'customer-segmentation' || type === 'anomalies') {
+                    visualizationSection.classList.remove('hidden');
+                    summarySection.classList.remove('hidden');
+
+                    const visualizationContent = document.getElementById('visualization-content');
+                    visualizationContent.innerHTML = result.visualization ? `
+                        <h3 class="text-lg font-medium text-gray-700 mb-4">${result.visualization.name}</h3>
+                        <img src="data:image/png;base64,${result.visualization.data}" alt="${result.visualization.name}" class="w-full rounded-lg">
+                    ` : '<p class="text-gray-600">No visualization available</p>';
+
+                    const tableBody = document.getElementById('summary-table-body');
+                    tableBody.innerHTML = '';
+                    result.summary.forEach(row => {
+                        const tr = document.createElement('tr');
+                        tr.innerHTML = `
+                            <td class="p-3 border-t text-gray-700">${dataset || type}</td>
+                            <td class="p-3 border-t text-gray-700">${row.Statistical_Outliers || '-'}</td>
+                            <td class="p-3 border-t text-gray-700">${row.Isolation_Forest_Outliers || '-'}</td>
+                            <td class="p-3 border-t text-gray-700">${row.Total_Records || '-'}</td>
+                        `;
+                        tableBody.appendChild(tr);
+                    });
+                } else if (type === 'interactive-dashboard') {
+                    visualizationSection.classList.remove('hidden');
+                    const visualizationContent = document.getElementById('visualization-content');
+                    visualizationContent.innerHTML = result.visualization ? `
+                        <h3 class="text-lg font-medium text-gray-700 mb-4">${result.visualization.name}</h3>
+                        <div class="w-full h-[800px]">${result.visualization.data}</div>
+                    ` : '<p class="text-gray-600">No visualization available</p>';
+                } else {
+                    visualizationSection.classList.remove('hidden');
+                    const visualizationContent = document.getElementById('visualization-content');
+                    visualizationContent.innerHTML = result.visualization ? `
+                        <h3 class="text-lg font-medium text-gray-700 mb-4">${result.visualization.name}</h3>
+                        <img src="data:image/png;base64,${result.visualization.data}" alt="${result.visualization.name}" class="w-full rounded-lg">
+                    ` : '<p class="text-gray-600">No visualization available</p>';
+                }
+            } catch (error) {
+                loadingDiv.classList.add('hidden');
+                errorDiv.classList.remove('hidden');
+                errorDiv.textContent = `Error: ${error.message}`;
+                if (error.name === 'AbortError') {
+                    errorDiv.textContent = 'Error: Analysis timed out after 30 seconds';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
