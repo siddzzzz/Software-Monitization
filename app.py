@@ -2,7 +2,7 @@ from flask import Flask, render_template, jsonify
 import pandas as pd
 import numpy as np
 import matplotlib
-matplotlib.use('Agg')  # Use non-interactive backend
+matplotlib.use('Agg')  
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
@@ -20,15 +20,11 @@ import io
 import base64
 from datetime import datetime
 
-# Initialize Flask app
 app = Flask(__name__)
 
-# Configuration
 DATA_DIR = 'software_monetization_dataset'
-STATIC_DIR = 'static'
 OUTPUT_DIR = 'eda_outputs'
 
-# Set up logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -37,19 +33,12 @@ logging.basicConfig(
         logging.StreamHandler()
     ]
 )
-
-# Ensure static and output directories exist
-os.makedirs(STATIC_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# Visualization settings
 plt.style.use('seaborn-v0_8')
 sns.set_palette("husl")
 FIGSIZE = (12, 8)
-
-# ==================== DATA LOADING ====================
 def load_datasets():
-    """Load all datasets"""
     datasets = {}
     files = [
         'vendors.csv', 'customers.csv', 'products.csv', 'licenses.csv',
@@ -71,9 +60,7 @@ def load_datasets():
         logging.error("No datasets loaded successfully")
     return datasets
 
-# ==================== BASIC DATA OVERVIEW ====================
 def basic_data_overview(datasets):
-    """Generate basic overview of all datasets"""
     try:
         overview_stats = []
         for name, df in datasets.items():
@@ -98,9 +85,7 @@ def basic_data_overview(datasets):
         logging.error(f"Error in basic_data_overview: {str(e)}")
         return pd.DataFrame()
 
-# ==================== MISSING DATA ANALYSIS ====================
 def visualize_missing_data(df, title="Missing Data Pattern"):
-    """Visualize missing data patterns"""
     try:
         if df.isnull().sum().sum() == 0:
             return None
@@ -131,9 +116,7 @@ def visualize_missing_data(df, title="Missing Data Pattern"):
         logging.error(f"Error in visualize_missing_data: {str(e)}")
         return None
 
-# ==================== DISTRIBUTION ANALYSIS ====================
 def analyze_distributions(df, title="Dataset"):
-    """Analyze distribution of numeric variables"""
     try:
         numeric_cols = df.select_dtypes(include=[np.number]).columns
         
@@ -172,9 +155,7 @@ def analyze_distributions(df, title="Dataset"):
         logging.error(f"Error in analyze_distributions: {str(e)}")
         return None
 
-# ==================== CORRELATION ANALYSIS ====================
 def correlation_analysis(df, title="Dataset"):
-    """Analyze correlations between variables"""
     try:
         numeric_cols = df.select_dtypes(include=[np.number]).columns
         
@@ -201,9 +182,7 @@ def correlation_analysis(df, title="Dataset"):
         logging.error(f"Error in correlation_analysis: {str(e)}")
         return None
 
-# ==================== ANOMALY DETECTION ====================
 def detect_anomalies(df, title="Dataset"):
-    """Detect anomalies using multiple methods"""
     try:
         numeric_cols = df.select_dtypes(include=[np.number]).columns
         
@@ -211,15 +190,18 @@ def detect_anomalies(df, title="Dataset"):
             return None
         
         df_numeric = df[numeric_cols].dropna()
+        original_indices = df.index[df[numeric_cols].notna().all(axis=1)].tolist()
         
         z_scores = np.abs(stats.zscore(df_numeric))
         statistical_outliers = (z_scores > 3).any(axis=1)
+        statistical_outlier_indices = df_numeric.index[statistical_outliers].tolist()
         
         if len(df_numeric) > 10:
             iso_forest = IsolationForest(contamination=0.1, random_state=42)
             isolation_outliers = iso_forest.fit_predict(df_numeric) == -1
         else:
             isolation_outliers = np.zeros(len(df_numeric), dtype=bool)
+        isolation_outlier_indices = df_numeric.index[isolation_outliers].tolist()
         
         fig, axes = plt.subplots(1, 2, figsize=(15, 6))
         
@@ -259,15 +241,15 @@ def detect_anomalies(df, title="Dataset"):
                 'Statistical_Outliers': [statistical_outliers.sum()],
                 'Isolation_Forest_Outliers': [isolation_outliers.sum()],
                 'Total_Records': [len(df_numeric)]
-            })
+            }),
+            'statistical_outlier_indices': statistical_outlier_indices,
+            'isolation_outlier_indices': isolation_outlier_indices
         }
     except Exception as e:
         logging.error(f"Error in detect_anomalies: {str(e)}")
         return None
 
-# ==================== CUSTOMER SEGMENTATION ====================
 def customer_segmentation(customer_summary_df):
-    """Perform customer segmentation analysis"""
     try:
         if customer_summary_df.empty:
             return None
@@ -322,9 +304,7 @@ def customer_segmentation(customer_summary_df):
         logging.error(f"Error in customer_segmentation: {str(e)}")
         return None
 
-# ==================== INTERACTIVE DASHBOARD ====================
 def create_interactive_dashboard(datasets):
-    """Create an interactive dashboard using Plotly"""
     try:
         if 'licenses' not in datasets:
             return None
@@ -384,15 +364,12 @@ def create_interactive_dashboard(datasets):
         logging.error(f"Error in create_interactive_dashboard: {str(e)}")
         return None
 
-# ==================== ANALYSIS ROUTES ====================
 @app.route('/')
 def dashboard():
-    """Render main dashboard with buttons"""
     return render_template('dashboard.html')
 
 @app.route('/api/overview')
 def get_overview():
-    """API endpoint for dataset overview"""
     try:
         start_time = datetime.now()
         datasets = load_datasets()
@@ -414,7 +391,6 @@ def get_overview():
 
 @app.route('/api/missing-data/<dataset>')
 def get_missing_data(dataset):
-    """API endpoint for missing data analysis"""
     try:
         start_time = datetime.now()
         datasets = load_datasets()
@@ -441,7 +417,6 @@ def get_missing_data(dataset):
 
 @app.route('/api/distributions/<dataset>')
 def get_distributions(dataset):
-    """API endpoint for distribution analysis"""
     try:
         start_time = datetime.now()
         datasets = load_datasets()
@@ -468,7 +443,6 @@ def get_distributions(dataset):
 
 @app.route('/api/correlations/<dataset>')
 def get_correlations(dataset):
-    """API endpoint for correlation analysis"""
     try:
         start_time = datetime.now()
         datasets = load_datasets()
@@ -495,7 +469,6 @@ def get_correlations(dataset):
 
 @app.route('/api/anomalies/<dataset>')
 def get_anomalies(dataset):
-    """API endpoint for anomaly detection"""
     try:
         start_time = datetime.now()
         datasets = load_datasets()
@@ -515,6 +488,8 @@ def get_anomalies(dataset):
                 'data': anomaly_results['image']
             } if anomaly_results else None,
             'summary': anomaly_results['summary'].to_dict(orient='records') if anomaly_results else [],
+            'statistical_outlier_indices': anomaly_results['statistical_outlier_indices'] if anomaly_results else [],
+            'isolation_outlier_indices': anomaly_results['isolation_outlier_indices'] if anomaly_results else [],
             'execution_time': execution_time
         })
     except Exception as e:
@@ -523,7 +498,6 @@ def get_anomalies(dataset):
 
 @app.route('/api/customer-segmentation')
 def get_customer_segmentation():
-    """API endpoint for customer segmentation"""
     try:
         start_time = datetime.now()
         datasets = load_datasets()
@@ -550,7 +524,6 @@ def get_customer_segmentation():
 
 @app.route('/api/interactive-dashboard')
 def get_interactive_dashboard():
-    """API endpoint for interactive dashboard"""
     try:
         start_time = datetime.now()
         datasets = load_datasets()
@@ -571,5 +544,5 @@ def get_interactive_dashboard():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    logging.info("Starting Flask application...")
+    logging.info("Starting Flask")
     app.run(debug=True, host='0.0.0.0', port=5000)
