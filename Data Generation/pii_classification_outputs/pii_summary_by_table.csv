@@ -1,0 +1,10 @@
+Table,Total_Columns,PII_Columns,Non_PII_Columns,High_Risk_Columns,Medium_Risk_Columns,Low_Risk_Columns,Total_Rows,Status
+vendors,18,3,15,1,2,15,50,Success
+customers,15,6,9,2,4,9,500,Success
+products,15,1,14,1,0,14,274,Success
+licenses,44,5,39,0,5,39,3920,Success
+usage_history,16,6,10,0,6,10,76441,Success
+renewal_history,16,1,15,0,1,15,5873,Success
+customer_summary,9,1,8,0,1,8,500,Success
+product_performance,8,0,8,0,0,8,274,Success
+vendor_performance,7,0,7,0,0,7,50,Success

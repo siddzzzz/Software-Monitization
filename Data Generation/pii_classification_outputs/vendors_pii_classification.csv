@@ -1,0 +1,19 @@
+Table_Name,Column_Name,Data_Type,PII_Category,Is_PII,Classification_Reason,Null_Count,Null_Percentage,Unique_Values,Sample_Values,Privacy_Risk
+vendors,Vendor_ID,object,NON_PII,False,Does not contain identifiable information,0,0.0,50,"['V0001', 'V0002', 'V0003']",LOW
+vendors,Vendor_Name,object,DIRECT_PII,True,Contains 'name' - directly identifies person,0,0.0,50,[MASKED - PII DATA],HIGH
+vendors,Industry,object,NON_PII,False,Does not contain identifiable information,0,0.0,4,"['Enterprise Solutions', 'Technology', 'Software']",LOW
+vendors,Founded_Year,int64,NON_PII,False,Does not contain identifiable information,0,0.0,23,"[1994, 1998, 2017]",LOW
+vendors,Headquarters,object,NON_PII,False,Does not contain identifiable information,0,0.0,50,"['Sullivanton', 'Delgadoview', 'Jonathanside']",LOW
+vendors,Country,object,QUASI_PII,True,Contains 'country' - can identify when combined,0,0.0,43,[MASKED - PII DATA],MEDIUM
+vendors,Company_Size,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['small', 'large', 'medium']",LOW
+vendors,Employee_Count,int64,NON_PII,False,Does not contain identifiable information,0,0.0,40,"[21, 2683, 220]",LOW
+vendors,Annual_Revenue,int64,NON_PII,False,Does not contain identifiable information,0,0.0,50,"[428439, 40431104, 2481442]",LOW
+vendors,Total_Products,int64,NON_PII,False,Does not contain identifiable information,0,0.0,13,"[2, 14, 5]",LOW
+vendors,Total_Customers,int64,NON_PII,False,Does not contain identifiable information,0,0.0,23,"[52, 51, 41]",LOW
+vendors,Market_Focus,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['B2B', 'B2B', 'B2C']",LOW
+vendors,Support_Model,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['24/7', '24/7', '24/7']",LOW
+vendors,Deployment_Model,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['Hybrid', 'Cloud', 'Hybrid']",LOW
+vendors,Certification,object,NON_PII,False,Does not contain identifiable information,13,26.0,4,"['SOC2', nan, nan]",LOW
+vendors,Total_Revenue,int64,NON_PII,False,Does not contain identifiable information,0,0.0,50,"[8984280, 7609901, 5476946]",LOW
+vendors,Average_Contract_Value,float64,QUASI_PII,True,Contains 'age' - can identify when combined,0,0.0,50,[MASKED - PII DATA],MEDIUM
+vendors,Total_Licenses,int64,NON_PII,False,Does not contain identifiable information,0,0.0,34,"[77, 97, 72]",LOW

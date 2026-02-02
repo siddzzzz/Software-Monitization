@@ -1,0 +1,5 @@
+Table_Name,Column_Name,Data_Type,PII_Category,Is_PII,Classification_Reason,Null_Count,Null_Percentage,Unique_Values,Sample_Values,Privacy_Risk
+vendors,Vendor_Name,object,DIRECT_PII,True,Contains 'name' - directly identifies person,0,0.0,50,[MASKED - PII DATA],HIGH
+customers,Company_Name,object,DIRECT_PII,True,Contains 'name' - directly identifies person,0,0.0,494,[MASKED - PII DATA],HIGH
+customers,Contact_Email,object,DIRECT_PII,True,Contains 'email' - directly identifies person,0,0.0,498,[MASKED - PII DATA],HIGH
+products,Product_Name,object,DIRECT_PII,True,Contains 'name' - directly identifies person,0,0.0,272,[MASKED - PII DATA],HIGH

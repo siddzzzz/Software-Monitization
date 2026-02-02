@@ -1,0 +1,4 @@
+PII_Category,Column_Count,Table_Count
+DIRECT_PII,4,3
+NON_PII,125,9
+QUASI_PII,19,6

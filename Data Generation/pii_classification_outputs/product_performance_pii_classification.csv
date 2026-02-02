@@ -1,0 +1,9 @@
+Table_Name,Column_Name,Data_Type,PII_Category,Is_PII,Classification_Reason,Null_Count,Null_Percentage,Unique_Values,Sample_Values,Privacy_Risk
+product_performance,Product_ID,object,NON_PII,False,Does not contain identifiable information,0,0.0,274,"['P00001', 'P00002', 'P00003']",LOW
+product_performance,Unique_Customers,int64,NON_PII,False,Does not contain identifiable information,0,0.0,38,"[36, 41, 5]",LOW
+product_performance,Total_Purchased,int64,NON_PII,False,Does not contain identifiable information,0,0.0,268,"[5044, 6492, 762]",LOW
+product_performance,Total_Activated,int64,NON_PII,False,Does not contain identifiable information,0,0.0,260,"[4252, 5428, 609]",LOW
+product_performance,Total_Revenue,int64,NON_PII,False,Does not contain identifiable information,0,0.0,274,"[4706052, 4278228, 160782]",LOW
+product_performance,Avg_Contract_Value,float64,NON_PII,False,Does not contain identifiable information,0,0.0,274,"[130723.67, 104347.02, 32156.4]",LOW
+product_performance,Avg_Satisfaction,float64,NON_PII,False,Does not contain identifiable information,0,0.0,150,"[6.53, 5.41, 5.6]",LOW
+product_performance,High_Churn_Risk_Count,int64,NON_PII,False,Does not contain identifiable information,0,0.0,17,"[13, 15, 3]",LOW

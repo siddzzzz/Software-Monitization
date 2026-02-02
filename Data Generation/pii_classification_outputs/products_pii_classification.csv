@@ -1,0 +1,16 @@
+Table_Name,Column_Name,Data_Type,PII_Category,Is_PII,Classification_Reason,Null_Count,Null_Percentage,Unique_Values,Sample_Values,Privacy_Risk
+products,Product_ID,object,NON_PII,False,Does not contain identifiable information,0,0.0,274,"['P00001', 'P00002', 'P00003']",LOW
+products,Vendor_ID,object,NON_PII,False,Does not contain identifiable information,0,0.0,50,"['V0001', 'V0001', 'V0002']",LOW
+products,Product_Name,object,DIRECT_PII,True,Contains 'name' - directly identifies person,0,0.0,272,[MASKED - PII DATA],HIGH
+products,Product_Category,object,NON_PII,False,Does not contain identifiable information,0,0.0,10,"['HR', 'HR', 'Productivity']",LOW
+products,Launch_Date,object,NON_PII,False,Does not contain identifiable information,0,0.0,254,"['2024-10-15', '2022-09-01', '2022-03-31']",LOW
+products,License_Type,object,NON_PII,False,Does not contain identifiable information,0,0.0,6,"['Per Hour', 'Per Hour', 'Per User']",LOW
+products,Base_Price,int64,NON_PII,False,Does not contain identifiable information,0,0.0,238,"[933, 659, 211]",LOW
+products,Currency,object,NON_PII,False,Does not contain identifiable information,0,0.0,1,"['USD', 'USD', 'USD']",LOW
+products,Product_Features,int64,NON_PII,False,Does not contain identifiable information,0,0.0,13,"[6, 14, 9]",LOW
+products,Version,object,NON_PII,False,Does not contain identifiable information,0,0.0,204,"['3.7.8', '2.8.1', '2.2.5']",LOW
+products,Maturity,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['Beta', 'Legacy', 'Stable']",LOW
+products,Support_Level,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['Basic', 'Basic', 'Premium']",LOW
+products,Documentation_Quality,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['Good', 'Excellent', 'Good']",LOW
+products,API_Available,bool,NON_PII,False,Does not contain identifiable information,0,0.0,2,"[True, True, False]",LOW
+products,Integration_Complexity,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['Medium', 'High', 'Low']",LOW

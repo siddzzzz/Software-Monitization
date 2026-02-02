@@ -619,6 +619,7 @@ def top_products_activation():
         return jsonify({'products': products, 'quantities': quantities})
     except Exception as e:
         return jsonify({'error': str(e)})
+    
 
 if __name__ == '__main__':
     load_data()

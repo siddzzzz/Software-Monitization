@@ -1,0 +1,10 @@
+File,Original_Rows,Original_Columns,New_Columns,ID_Column,PID_Prefix,Status
+vendors.csv,50,18,19,Vendor_ID,VPID,Success
+customers.csv,500,15,16,Customer_ID,CPID,Success
+products.csv,274,15,16,Product_ID,PPID,Success
+licenses.csv,3920,44,45,License_ID,LPID,Success
+usage_history.csv,76441,16,17,Usage_ID,UPID,Success
+renewal_history.csv,5873,16,17,Renewal_ID,RPID,Success
+customer_summary.csv,500,9,10,Customer_ID,CSPID,Success
+product_performance.csv,274,8,9,Product_ID,PPPID,Success
+vendor_performance.csv,50,7,8,Vendor_ID,VPPID,Success

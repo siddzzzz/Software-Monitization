@@ -32,3 +32,48 @@
 2025-07-24 10:29:40,118 - INFO - Loaded vendor_performance.csv: (50, 7)
 2025-07-24 10:29:40,628 - INFO - Generated dataset overview
 2025-07-24 10:29:40,640 - INFO - 127.0.0.1 - - [24/Jul/2025 10:29:40] "GET /api/overview HTTP/1.1" 200 -
+2025-09-30 08:32:18,431 - INFO - Starting Flask
+2025-09-30 08:32:18,479 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.16:5000
+2025-09-30 08:32:18,480 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-30 08:32:18,482 - INFO -  * Restarting with stat
+2025-09-30 08:32:21,372 - INFO - Starting Flask
+2025-09-30 08:32:21,399 - WARNING -  * Debugger is active!
+2025-09-30 08:32:21,408 - INFO -  * Debugger PIN: 864-754-166
+2025-09-30 08:32:27,394 - INFO - 127.0.0.1 - - [30/Sep/2025 08:32:27] "GET / HTTP/1.1" 200 -
+2025-09-30 08:32:27,910 - INFO - 127.0.0.1 - - [30/Sep/2025 08:32:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-30 08:32:29,139 - INFO - Loaded vendors.csv: (50, 18)
+2025-09-30 08:32:29,149 - INFO - Loaded customers.csv: (500, 15)
+2025-09-30 08:32:29,153 - INFO - Loaded products.csv: (274, 15)
+2025-09-30 08:32:29,199 - INFO - Loaded licenses.csv: (3920, 44)
+2025-09-30 08:32:29,345 - INFO - Loaded usage_history.csv: (76441, 16)
+2025-09-30 08:32:29,368 - INFO - Loaded renewal_history.csv: (5873, 16)
+2025-09-30 08:32:29,371 - INFO - Loaded customer_summary.csv: (500, 9)
+2025-09-30 08:32:29,374 - INFO - Loaded product_performance.csv: (274, 8)
+2025-09-30 08:32:29,376 - INFO - Loaded vendor_performance.csv: (50, 7)
+2025-09-30 08:32:29,667 - INFO - Generated dataset overview
+2025-09-30 08:32:29,688 - INFO - 127.0.0.1 - - [30/Sep/2025 08:32:29] "GET /api/overview HTTP/1.1" 200 -
+2025-09-30 08:32:35,023 - INFO - Loaded vendors.csv: (50, 18)
+2025-09-30 08:32:35,041 - INFO - Loaded customers.csv: (500, 15)
+2025-09-30 08:32:35,050 - INFO - Loaded products.csv: (274, 15)
+2025-09-30 08:32:35,115 - INFO - Loaded licenses.csv: (3920, 44)
+2025-09-30 08:32:35,361 - INFO - Loaded usage_history.csv: (76441, 16)
+2025-09-30 08:32:35,395 - INFO - Loaded renewal_history.csv: (5873, 16)
+2025-09-30 08:32:35,404 - INFO - Loaded customer_summary.csv: (500, 9)
+2025-09-30 08:32:35,408 - INFO - Loaded product_performance.csv: (274, 8)
+2025-09-30 08:32:35,413 - INFO - Loaded vendor_performance.csv: (50, 7)
+2025-09-30 08:32:37,744 - INFO - Generated anomaly visualization for Licenses Dataset
+2025-09-30 08:32:37,770 - INFO - 127.0.0.1 - - [30/Sep/2025 08:32:37] "GET /api/anomalies/licenses HTTP/1.1" 200 -
+2025-09-30 08:32:41,318 - INFO - Loaded vendors.csv: (50, 18)
+2025-09-30 08:32:41,330 - INFO - Loaded customers.csv: (500, 15)
+2025-09-30 08:32:41,337 - INFO - Loaded products.csv: (274, 15)
+2025-09-30 08:32:41,408 - INFO - Loaded licenses.csv: (3920, 44)
+2025-09-30 08:32:41,662 - INFO - Loaded usage_history.csv: (76441, 16)
+2025-09-30 08:32:41,701 - INFO - Loaded renewal_history.csv: (5873, 16)
+2025-09-30 08:32:41,705 - INFO - Loaded customer_summary.csv: (500, 9)
+2025-09-30 08:32:41,711 - INFO - Loaded product_performance.csv: (274, 8)
+2025-09-30 08:32:41,715 - INFO - Loaded vendor_performance.csv: (50, 7)
+2025-09-30 08:32:41,953 - INFO - Generated interactive dashboard
+2025-09-30 08:32:42,081 - INFO - 127.0.0.1 - - [30/Sep/2025 08:32:42] "GET /api/interactive-dashboard HTTP/1.1" 200 -

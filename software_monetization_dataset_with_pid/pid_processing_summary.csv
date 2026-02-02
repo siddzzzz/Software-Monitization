@@ -1,0 +1,10 @@
+File,Original_Rows,Original_Columns,New_Columns,ID_Column,PID_Prefix,Status
+vendors.csv,0,0,0,Vendor_ID,VPID,Not Found
+customers.csv,0,0,0,Customer_ID,CPID,Not Found
+products.csv,0,0,0,Product_ID,PPID,Not Found
+licenses.csv,0,0,0,License_ID,LPID,Not Found
+usage_history.csv,0,0,0,Usage_ID,UPID,Not Found
+renewal_history.csv,0,0,0,Renewal_ID,RPID,Not Found
+customer_summary.csv,0,0,0,Customer_ID,CSPID,Not Found
+product_performance.csv,0,0,0,Product_ID,PPPID,Not Found
+vendor_performance.csv,0,0,0,Vendor_ID,VPPID,Not Found

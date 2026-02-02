@@ -1,0 +1,45 @@
+Table_Name,Column_Name,Data_Type,PII_Category,Is_PII,Classification_Reason,Null_Count,Null_Percentage,Unique_Values,Sample_Values,Privacy_Risk
+licenses,License_ID,object,NON_PII,False,Does not contain identifiable information,81,2.07,3839,"[nan, 'L000002', 'L000003']",LOW
+licenses,Customer_ID,object,QUASI_PII,True,Contains 'customer_id' - can identify when combined,79,2.02,500,[MASKED - PII DATA],MEDIUM
+licenses,Vendor_ID,object,NON_PII,False,Does not contain identifiable information,70,1.79,50,"['V0003', 'V0041', 'V0032']",LOW
+licenses,Product_ID,object,NON_PII,False,Does not contain identifiable information,84,2.14,274,"['P00018', 'P00227', 'P00156']",LOW
+licenses,Number_of_quantities_purchased,float64,NON_PII,False,Does not contain identifiable information,85,2.17,390,"[128.0, 209.0, 281.0]",LOW
+licenses,Number_of_quantities_activated,float64,NON_PII,False,Does not contain identifiable information,82,2.09,337,"[104.0, 154.0, 226.0]",LOW
+licenses,Percentage_of_quantities_deployed,float64,QUASI_PII,True,Contains 'age' - can identify when combined,70,1.79,2295,[MASKED - PII DATA],MEDIUM
+licenses,Days_since_last_quantity_purchased,float64,NON_PII,False,Does not contain identifiable information,95,2.42,1923,"[1269.0, -504.0, -731.0]",LOW
+licenses,Days_since_last_quantity_activated,float64,NON_PII,False,Does not contain identifiable information,97,2.47,1914,"[1239.0, -525.0, -761.0]",LOW
+licenses,Avg_gap_in_quantity_purchase,float64,NON_PII,False,Does not contain identifiable information,94,2.4,1155,"[149.0, 198.5, 199.0]",LOW
+licenses,Avg_gap_in_quantity_activated,float64,NON_PII,False,Does not contain identifiable information,90,2.3,1215,"[155.0, 202.25, 201.75]",LOW
+licenses,Direction_Trend_purchased_quantities,object,NON_PII,False,Does not contain identifiable information,71,1.81,3,"['Upward', 'Downward', 'Downward']",LOW
+licenses,Direction_Trend_activated_quantities,object,NON_PII,False,Does not contain identifiable information,66,1.68,3,"['Upward', 'Downward', 'Downward']",LOW
+licenses,Direction_Trend_deployed_quantities,object,NON_PII,False,Does not contain identifiable information,74,1.89,3,"['Upward', 'Downward', 'Downward']",LOW
+licenses,Deployment_Type,object,NON_PII,False,Does not contain identifiable information,84,2.14,3,"['Production', 'Production', 'Development']",LOW
+licenses,Days_since_first_quantity_purchased,float64,NON_PII,False,Does not contain identifiable information,82,2.09,1611,"[1716.0, 290.0, 65.0]",LOW
+licenses,Days_since_first_activation,float64,NON_PII,False,Does not contain identifiable information,62,1.58,1613,"[1704.0, 284.0, 46.0]",LOW
+licenses,Avg_gap_Purchase_to_Activation,float64,NON_PII,False,Does not contain identifiable information,80,2.04,244,"[13.0, 11.4, 20.2]",LOW
+licenses,Frequency_of_Product_Purchase,float64,NON_PII,False,Does not contain identifiable information,63,1.61,5,"[4.0, 5.0, 5.0]",LOW
+licenses,Recency_of_product_purchase,float64,NON_PII,False,Does not contain identifiable information,67,1.71,1930,"[1269.0, -504.0, -731.0]",LOW
+licenses,Variants,object,NON_PII,False,Does not contain identifiable information,82,2.09,535,"['V2,V3,V2', 'V2,V1,V1', 'V5,V5,V2,V3']",LOW
+licenses,Subscription_period_derived,float64,NON_PII,False,Does not contain identifiable information,80,2.04,5,"[90.0, 730.0, 365.0]",LOW
+licenses,Contract_Value,float64,NON_PII,False,Does not contain identifiable information,84,2.14,3606,"[100096.0, 51205.0, 200072.0]",LOW
+licenses,License_Start_Date,object,NON_PII,False,Does not contain identifiable information,68,1.73,1606,"['2020-04-20', '2024-03-16', '2024-10-27']",LOW
+licenses,License_End_Date,object,NON_PII,False,Does not contain identifiable information,77,1.96,2034,"['2021-10-09', '2026-06-18', '2028-01-01']",LOW
+licenses,Renewal_Status,object,NON_PII,False,Does not contain identifiable information,75,1.91,3,"['Active', 'Expired', 'Active']",LOW
+licenses,Payment_Status,object,NON_PII,False,Does not contain identifiable information,84,2.14,3,"['Pending', 'Pending', 'Pending']",LOW
+licenses,Support_Tickets,float64,NON_PII,False,Does not contain identifiable information,76,1.94,11,"[6.0, 6.0, 3.0]",LOW
+licenses,Satisfaction_Score,float64,NON_PII,False,Does not contain identifiable information,82,2.09,10,"[4.0, 6.0, 7.0]",LOW
+licenses,Churn_Risk,object,NON_PII,False,Does not contain identifiable information,73,1.86,3,"['High', 'Low', 'Low']",LOW
+licenses,Usage_Frequency,object,QUASI_PII,True,Contains 'age' - can identify when combined,77,1.96,3,[MASKED - PII DATA],MEDIUM
+licenses,Last_Login,object,NON_PII,False,Does not contain identifiable information,74,1.89,976,"['2021-12-20', '2024-12-31 00:00:00', '2024-12-31 00:00:00']",LOW
+licenses,Feature_Utilization,float64,NON_PII,False,Does not contain identifiable information,65,1.66,81,"[27.0, 93.0, 25.0]",LOW
+licenses,Integration_Count,float64,NON_PII,False,Does not contain identifiable information,79,2.02,6,"[2.0, 1.0, 1.0]",LOW
+licenses,Custom_Configuration,object,NON_PII,False,Does not contain identifiable information,81,2.07,2,"[False, False, True]",LOW
+licenses,Training_Sessions,float64,NON_PII,False,Does not contain identifiable information,83,2.12,4,"[1.0, 2.0, 2.0]",LOW
+licenses,Upgrade_History,float64,NON_PII,False,Does not contain identifiable information,77,1.96,4,"[1.0, 3.0, 2.0]",LOW
+licenses,Downgrade_History,float64,NON_PII,False,Does not contain identifiable information,75,1.91,2,"[1.0, 1.0, 0.0]",LOW
+licenses,Relative_number_of_products_purchased_from_catalogue,float64,NON_PII,False,Does not contain identifiable information,83,2.12,31,"[0.7299270072992701, 0.7299270072992701, 1.094890510948905]",LOW
+licenses,Relative_purchases_qty,float64,NON_PII,False,Does not contain identifiable information,84,2.14,3703,"[37.98219584569733, 62.01780415430267, 47.14765100671141]",LOW
+licenses,Relative_activation_qty,float64,NON_PII,False,Does not contain identifiable information,73,1.86,3676,"[40.310077519379846, 59.68992248062015, 47.578947368421055]",LOW
+licenses,Relative_activation_percentage,float64,QUASI_PII,True,Contains 'age' - can identify when combined,79,2.02,2157,[MASKED - PII DATA],MEDIUM
+licenses,Relative_Activated_Variant_percentage,float64,QUASI_PII,True,Contains 'age' - can identify when combined,82,2.09,5,[MASKED - PII DATA],MEDIUM
+licenses,Relative_variant_activation_quantity,float64,NON_PII,False,Does not contain identifiable information,74,1.89,3675,"[40.310077519379846, 59.68992248062015, 47.578947368421055]",LOW

@@ -1,0 +1,1563 @@
+[
+  {
+    "table_name": "vendors",
+    "total_columns": 18,
+    "total_rows": 50,
+    "pii_columns_count": 3,
+    "non_pii_columns_count": 15,
+    "columns": [
+      {
+        "name": "Vendor_ID",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 50,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Vendor_Name",
+        "dtype": "object",
+        "is_pii": true,
+        "pii_category": "DIRECT_PII",
+        "pii_reason": "Contains 'name' - directly identifies person",
+        "nullable": false,
+        "unique_values": 50,
+        "privacy_risk": "HIGH"
+      },
+      {
+        "name": "Industry",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 4,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Founded_Year",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 23,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Headquarters",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 50,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Country",
+        "dtype": "object",
+        "is_pii": true,
+        "pii_category": "QUASI_PII",
+        "pii_reason": "Contains 'country' - can identify when combined",
+        "nullable": false,
+        "unique_values": 43,
+        "privacy_risk": "MEDIUM"
+      },
+      {
+        "name": "Company_Size",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 3,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Employee_Count",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 40,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Annual_Revenue",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 50,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Total_Products",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 13,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Total_Customers",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 23,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Market_Focus",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 3,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Support_Model",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 3,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Deployment_Model",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 3,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Certification",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 4,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Total_Revenue",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 50,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Average_Contract_Value",
+        "dtype": "float64",
+        "is_pii": true,
+        "pii_category": "QUASI_PII",
+        "pii_reason": "Contains 'age' - can identify when combined",
+        "nullable": false,
+        "unique_values": 50,
+        "privacy_risk": "MEDIUM"
+      },
+      {
+        "name": "Total_Licenses",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 34,
+        "privacy_risk": "LOW"
+      }
+    ]
+  },
+  {
+    "table_name": "customers",
+    "total_columns": 15,
+    "total_rows": 500,
+    "pii_columns_count": 6,
+    "non_pii_columns_count": 9,
+    "columns": [
+      {
+        "name": "Customer_ID",
+        "dtype": "object",
+        "is_pii": true,
+        "pii_category": "QUASI_PII",
+        "pii_reason": "Contains 'customer_id' - can identify when combined",
+        "nullable": false,
+        "unique_values": 500,
+        "privacy_risk": "MEDIUM"
+      },
+      {
+        "name": "Company_Name",
+        "dtype": "object",
+        "is_pii": true,
+        "pii_category": "DIRECT_PII",
+        "pii_reason": "Contains 'name' - directly identifies person",
+        "nullable": false,
+        "unique_values": 494,
+        "privacy_risk": "HIGH"
+      },
+      {
+        "name": "Industry_Type",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 10,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Company_Size",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 3,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Employee_Count",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 335,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Annual_Revenue",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 500,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Location",
+        "dtype": "object",
+        "is_pii": true,
+        "pii_category": "QUASI_PII",
+        "pii_reason": "Contains 'location' - can identify when combined",
+        "nullable": false,
+        "unique_values": 489,
+        "privacy_risk": "MEDIUM"
+      },
+      {
+        "name": "State",
+        "dtype": "object",
+        "is_pii": true,
+        "pii_category": "QUASI_PII",
+        "pii_reason": "Contains 'state' - can identify when combined",
+        "nullable": false,
+        "unique_values": 50,
+        "privacy_risk": "MEDIUM"
+      },
+      {
+        "name": "Country",
+        "dtype": "object",
+        "is_pii": true,
+        "pii_category": "QUASI_PII",
+        "pii_reason": "Contains 'country' - can identify when combined",
+        "nullable": false,
+        "unique_values": 219,
+        "privacy_risk": "MEDIUM"
+      },
+      {
+        "name": "Years_in_Business",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 50,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Segment",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 3,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "IT_Budget",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 500,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Decision_Maker",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 499,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Contact_Email",
+        "dtype": "object",
+        "is_pii": true,
+        "pii_category": "DIRECT_PII",
+        "pii_reason": "Contains 'email' - directly identifies person",
+        "nullable": false,
+        "unique_values": 498,
+        "privacy_risk": "HIGH"
+      },
+      {
+        "name": "Registration_Date",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 449,
+        "privacy_risk": "LOW"
+      }
+    ]
+  },
+  {
+    "table_name": "products",
+    "total_columns": 15,
+    "total_rows": 274,
+    "pii_columns_count": 1,
+    "non_pii_columns_count": 14,
+    "columns": [
+      {
+        "name": "Product_ID",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 274,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Vendor_ID",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 50,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Product_Name",
+        "dtype": "object",
+        "is_pii": true,
+        "pii_category": "DIRECT_PII",
+        "pii_reason": "Contains 'name' - directly identifies person",
+        "nullable": false,
+        "unique_values": 272,
+        "privacy_risk": "HIGH"
+      },
+      {
+        "name": "Product_Category",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 10,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Launch_Date",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 254,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "License_Type",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 6,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Base_Price",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 238,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Currency",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 1,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Product_Features",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 13,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Version",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 204,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Maturity",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 3,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Support_Level",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 3,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Documentation_Quality",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 3,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "API_Available",
+        "dtype": "bool",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 2,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Integration_Complexity",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 3,
+        "privacy_risk": "LOW"
+      }
+    ]
+  },
+  {
+    "table_name": "licenses",
+    "total_columns": 44,
+    "total_rows": 3920,
+    "pii_columns_count": 5,
+    "non_pii_columns_count": 39,
+    "columns": [
+      {
+        "name": "License_ID",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 3839,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Customer_ID",
+        "dtype": "object",
+        "is_pii": true,
+        "pii_category": "QUASI_PII",
+        "pii_reason": "Contains 'customer_id' - can identify when combined",
+        "nullable": true,
+        "unique_values": 500,
+        "privacy_risk": "MEDIUM"
+      },
+      {
+        "name": "Vendor_ID",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 50,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Product_ID",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 274,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Number_of_quantities_purchased",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 390,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Number_of_quantities_activated",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 337,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Percentage_of_quantities_deployed",
+        "dtype": "float64",
+        "is_pii": true,
+        "pii_category": "QUASI_PII",
+        "pii_reason": "Contains 'age' - can identify when combined",
+        "nullable": true,
+        "unique_values": 2295,
+        "privacy_risk": "MEDIUM"
+      },
+      {
+        "name": "Days_since_last_quantity_purchased",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 1923,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Days_since_last_quantity_activated",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 1914,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Avg_gap_in_quantity_purchase",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 1155,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Avg_gap_in_quantity_activated",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 1215,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Direction_Trend_purchased_quantities",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 3,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Direction_Trend_activated_quantities",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 3,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Direction_Trend_deployed_quantities",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 3,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Deployment_Type",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 3,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Days_since_first_quantity_purchased",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 1611,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Days_since_first_activation",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 1613,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Avg_gap_Purchase_to_Activation",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 244,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Frequency_of_Product_Purchase",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 5,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Recency_of_product_purchase",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 1930,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Variants",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 535,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Subscription_period_derived",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 5,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Contract_Value",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 3606,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "License_Start_Date",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 1606,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "License_End_Date",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 2034,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Renewal_Status",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 3,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Payment_Status",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 3,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Support_Tickets",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 11,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Satisfaction_Score",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 10,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Churn_Risk",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 3,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Usage_Frequency",
+        "dtype": "object",
+        "is_pii": true,
+        "pii_category": "QUASI_PII",
+        "pii_reason": "Contains 'age' - can identify when combined",
+        "nullable": true,
+        "unique_values": 3,
+        "privacy_risk": "MEDIUM"
+      },
+      {
+        "name": "Last_Login",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 976,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Feature_Utilization",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 81,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Integration_Count",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 6,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Custom_Configuration",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 2,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Training_Sessions",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 4,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Upgrade_History",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 4,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Downgrade_History",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 2,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Relative_number_of_products_purchased_from_catalogue",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 31,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Relative_purchases_qty",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 3703,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Relative_activation_qty",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 3676,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Relative_activation_percentage",
+        "dtype": "float64",
+        "is_pii": true,
+        "pii_category": "QUASI_PII",
+        "pii_reason": "Contains 'age' - can identify when combined",
+        "nullable": true,
+        "unique_values": 2157,
+        "privacy_risk": "MEDIUM"
+      },
+      {
+        "name": "Relative_Activated_Variant_percentage",
+        "dtype": "float64",
+        "is_pii": true,
+        "pii_category": "QUASI_PII",
+        "pii_reason": "Contains 'age' - can identify when combined",
+        "nullable": true,
+        "unique_values": 5,
+        "privacy_risk": "MEDIUM"
+      },
+      {
+        "name": "Relative_variant_activation_quantity",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": true,
+        "unique_values": 3675,
+        "privacy_risk": "LOW"
+      }
+    ]
+  },
+  {
+    "table_name": "usage_history",
+    "total_columns": 16,
+    "total_rows": 76441,
+    "pii_columns_count": 6,
+    "non_pii_columns_count": 10,
+    "columns": [
+      {
+        "name": "Usage_ID",
+        "dtype": "object",
+        "is_pii": true,
+        "pii_category": "QUASI_PII",
+        "pii_reason": "Contains 'age' - can identify when combined",
+        "nullable": false,
+        "unique_values": 76441,
+        "privacy_risk": "MEDIUM"
+      },
+      {
+        "name": "License_ID",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 3920,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Customer_ID",
+        "dtype": "object",
+        "is_pii": true,
+        "pii_category": "QUASI_PII",
+        "pii_reason": "Contains 'customer_id' - can identify when combined",
+        "nullable": false,
+        "unique_values": 500,
+        "privacy_risk": "MEDIUM"
+      },
+      {
+        "name": "Product_ID",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 274,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Usage_Date",
+        "dtype": "object",
+        "is_pii": true,
+        "pii_category": "QUASI_PII",
+        "pii_reason": "Contains 'age' - can identify when combined",
+        "nullable": false,
+        "unique_values": 1820,
+        "privacy_risk": "MEDIUM"
+      },
+      {
+        "name": "Usage_Month",
+        "dtype": "object",
+        "is_pii": true,
+        "pii_category": "QUASI_PII",
+        "pii_reason": "Contains 'age' - can identify when combined",
+        "nullable": false,
+        "unique_values": 60,
+        "privacy_risk": "MEDIUM"
+      },
+      {
+        "name": "Active_Users",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 342,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "API_Calls",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 9997,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Data_Processed_GB",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 1001,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Session_Duration_Hours",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 24,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Feature_Usage_Score",
+        "dtype": "int64",
+        "is_pii": true,
+        "pii_category": "QUASI_PII",
+        "pii_reason": "Contains 'age' - can identify when combined",
+        "nullable": false,
+        "unique_values": 101,
+        "privacy_risk": "MEDIUM"
+      },
+      {
+        "name": "Error_Rate",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 6,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Support_Interactions",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 4,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Downtime_Minutes",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 61,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Bandwidth_Used_GB",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 101,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Storage_Used_GB",
+        "dtype": "int64",
+        "is_pii": true,
+        "pii_category": "QUASI_PII",
+        "pii_reason": "Contains 'age' - can identify when combined",
+        "nullable": false,
+        "unique_values": 501,
+        "privacy_risk": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "table_name": "renewal_history",
+    "total_columns": 16,
+    "total_rows": 5873,
+    "pii_columns_count": 1,
+    "non_pii_columns_count": 15,
+    "columns": [
+      {
+        "name": "Renewal_ID",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 5873,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "License_ID",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 2932,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Customer_ID",
+        "dtype": "object",
+        "is_pii": true,
+        "pii_category": "QUASI_PII",
+        "pii_reason": "Contains 'customer_id' - can identify when combined",
+        "nullable": false,
+        "unique_values": 488,
+        "privacy_risk": "MEDIUM"
+      },
+      {
+        "name": "Product_ID",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 274,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Renewal_Date",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 2488,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Previous_Contract_Value",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 2797,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "New_Contract_Value",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 5721,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Renewal_Type",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 3,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Renewal_Duration",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 3,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Discount_Applied",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 26,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Renewal_Status",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 3,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Negotiation_Days",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 31,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Decision_Maker_Change",
+        "dtype": "bool",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 2,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Competitive_Threat",
+        "dtype": "bool",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 2,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Upsell_Opportunity",
+        "dtype": "bool",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 2,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Cross_sell_Products",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 4,
+        "privacy_risk": "LOW"
+      }
+    ]
+  },
+  {
+    "table_name": "customer_summary",
+    "total_columns": 9,
+    "total_rows": 500,
+    "pii_columns_count": 1,
+    "non_pii_columns_count": 8,
+    "columns": [
+      {
+        "name": "Customer_ID",
+        "dtype": "object",
+        "is_pii": true,
+        "pii_category": "QUASI_PII",
+        "pii_reason": "Contains 'customer_id' - can identify when combined",
+        "nullable": false,
+        "unique_values": 500,
+        "privacy_risk": "MEDIUM"
+      },
+      {
+        "name": "Total_Purchased",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 451,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Total_Activated",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 457,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Total_Contract_Value",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 500,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Avg_Contract_Value",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 500,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Total_Licenses",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 31,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Avg_Satisfaction",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 159,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Total_Support_Tickets",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 118,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "High_Churn_Risk_Count",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 15,
+        "privacy_risk": "LOW"
+      }
+    ]
+  },
+  {
+    "table_name": "product_performance",
+    "total_columns": 8,
+    "total_rows": 274,
+    "pii_columns_count": 0,
+    "non_pii_columns_count": 8,
+    "columns": [
+      {
+        "name": "Product_ID",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 274,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Unique_Customers",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 38,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Total_Purchased",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 268,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Total_Activated",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 260,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Total_Revenue",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 274,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Avg_Contract_Value",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 274,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Avg_Satisfaction",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 150,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "High_Churn_Risk_Count",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 17,
+        "privacy_risk": "LOW"
+      }
+    ]
+  },
+  {
+    "table_name": "vendor_performance",
+    "total_columns": 7,
+    "total_rows": 50,
+    "pii_columns_count": 0,
+    "non_pii_columns_count": 7,
+    "columns": [
+      {
+        "name": "Vendor_ID",
+        "dtype": "object",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 50,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Unique_Customers",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 23,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Unique_Products",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 13,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Total_Revenue",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 50,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Avg_Contract_Value",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 50,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Avg_Satisfaction",
+        "dtype": "float64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 39,
+        "privacy_risk": "LOW"
+      },
+      {
+        "name": "Total_Support_Tickets",
+        "dtype": "int64",
+        "is_pii": false,
+        "pii_category": "NON_PII",
+        "pii_reason": "Does not contain identifiable information",
+        "nullable": false,
+        "unique_values": 43,
+        "privacy_risk": "LOW"
+      }
+    ]
+  }
+]

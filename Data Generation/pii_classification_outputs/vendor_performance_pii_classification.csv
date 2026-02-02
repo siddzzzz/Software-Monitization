@@ -1,0 +1,8 @@
+Table_Name,Column_Name,Data_Type,PII_Category,Is_PII,Classification_Reason,Null_Count,Null_Percentage,Unique_Values,Sample_Values,Privacy_Risk
+vendor_performance,Vendor_ID,object,NON_PII,False,Does not contain identifiable information,0,0.0,50,"['V0001', 'V0002', 'V0003']",LOW
+vendor_performance,Unique_Customers,int64,NON_PII,False,Does not contain identifiable information,0,0.0,23,"[52, 51, 41]",LOW
+vendor_performance,Unique_Products,int64,NON_PII,False,Does not contain identifiable information,0,0.0,13,"[2, 14, 5]",LOW
+vendor_performance,Total_Revenue,int64,NON_PII,False,Does not contain identifiable information,0,0.0,50,"[8984280, 7609901, 5476946]",LOW
+vendor_performance,Avg_Contract_Value,float64,NON_PII,False,Does not contain identifiable information,0,0.0,50,"[116678.96, 78452.59, 76068.69]",LOW
+vendor_performance,Avg_Satisfaction,float64,NON_PII,False,Does not contain identifiable information,0,0.0,39,"[5.94, 5.74, 5.71]",LOW
+vendor_performance,Total_Support_Tickets,int64,NON_PII,False,Does not contain identifiable information,0,0.0,43,"[339, 449, 388]",LOW

@@ -1,0 +1,10 @@
+Table_Name,Column_Name,Data_Type,PII_Category,Is_PII,Classification_Reason,Null_Count,Null_Percentage,Unique_Values,Sample_Values,Privacy_Risk
+customer_summary,Customer_ID,object,QUASI_PII,True,Contains 'customer_id' - can identify when combined,0,0.0,500,[MASKED - PII DATA],MEDIUM
+customer_summary,Total_Purchased,int64,NON_PII,False,Does not contain identifiable information,0,0.0,451,"[337, 596, 1008]",LOW
+customer_summary,Total_Activated,int64,NON_PII,False,Does not contain identifiable information,0,0.0,457,"[258, 475, 833]",LOW
+customer_summary,Total_Contract_Value,int64,NON_PII,False,Does not contain identifiable information,0,0.0,500,"[151301, 393844, 462068]",LOW
+customer_summary,Avg_Contract_Value,float64,NON_PII,False,Does not contain identifiable information,0,0.0,500,"[75650.5, 131281.33, 66009.71]",LOW
+customer_summary,Total_Licenses,int64,NON_PII,False,Does not contain identifiable information,0,0.0,31,"[2, 3, 7]",LOW
+customer_summary,Avg_Satisfaction,float64,NON_PII,False,Does not contain identifiable information,0,0.0,159,"[5.0, 4.33, 2.86]",LOW
+customer_summary,Total_Support_Tickets,int64,NON_PII,False,Does not contain identifiable information,0,0.0,118,"[12, 16, 39]",LOW
+customer_summary,High_Churn_Risk_Count,int64,NON_PII,False,Does not contain identifiable information,0,0.0,15,"[1, 0, 3]",LOW

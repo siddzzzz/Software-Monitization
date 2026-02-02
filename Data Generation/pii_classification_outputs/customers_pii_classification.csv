@@ -1,0 +1,16 @@
+Table_Name,Column_Name,Data_Type,PII_Category,Is_PII,Classification_Reason,Null_Count,Null_Percentage,Unique_Values,Sample_Values,Privacy_Risk
+customers,Customer_ID,object,QUASI_PII,True,Contains 'customer_id' - can identify when combined,0,0.0,500,[MASKED - PII DATA],MEDIUM
+customers,Company_Name,object,DIRECT_PII,True,Contains 'name' - directly identifies person,0,0.0,494,[MASKED - PII DATA],HIGH
+customers,Industry_Type,object,NON_PII,False,Does not contain identifiable information,0,0.0,10,"['Government', 'Education', 'Transportation']",LOW
+customers,Company_Size,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['large', 'medium', 'large']",LOW
+customers,Employee_Count,int64,NON_PII,False,Does not contain identifiable information,0,0.0,335,"[5902, 508, 1990]",LOW
+customers,Annual_Revenue,int64,NON_PII,False,Does not contain identifiable information,0,0.0,500,"[417326886, 18918315, 217700735]",LOW
+customers,Location,object,QUASI_PII,True,Contains 'location' - can identify when combined,0,0.0,489,[MASKED - PII DATA],MEDIUM
+customers,State,object,QUASI_PII,True,Contains 'state' - can identify when combined,0,0.0,50,[MASKED - PII DATA],MEDIUM
+customers,Country,object,QUASI_PII,True,Contains 'country' - can identify when combined,0,0.0,219,[MASKED - PII DATA],MEDIUM
+customers,Years_in_Business,int64,NON_PII,False,Does not contain identifiable information,0,0.0,50,"[27, 34, 3]",LOW
+customers,Segment,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['Standard', 'Premium', 'Standard']",LOW
+customers,IT_Budget,int64,NON_PII,False,Does not contain identifiable information,0,0.0,500,"[3765256, 3619060, 1630884]",LOW
+customers,Decision_Maker,object,NON_PII,False,Does not contain identifiable information,0,0.0,499,"['Jesse Anderson', 'Nichole Campbell', 'Tanya Bates']",LOW
+customers,Contact_Email,object,DIRECT_PII,True,Contains 'email' - directly identifies person,0,0.0,498,[MASKED - PII DATA],HIGH
+customers,Registration_Date,object,NON_PII,False,Does not contain identifiable information,0,0.0,449,"['2023-04-18', '2024-06-14', '2020-02-05']",LOW

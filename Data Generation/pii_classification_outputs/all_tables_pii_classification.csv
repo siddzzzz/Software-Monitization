@@ -1,0 +1,149 @@
+Table_Name,Column_Name,Data_Type,PII_Category,Is_PII,Classification_Reason,Null_Count,Null_Percentage,Unique_Values,Sample_Values,Privacy_Risk
+vendors,Vendor_ID,object,NON_PII,False,Does not contain identifiable information,0,0.0,50,"['V0001', 'V0002', 'V0003']",LOW
+vendors,Vendor_Name,object,DIRECT_PII,True,Contains 'name' - directly identifies person,0,0.0,50,[MASKED - PII DATA],HIGH
+vendors,Industry,object,NON_PII,False,Does not contain identifiable information,0,0.0,4,"['Enterprise Solutions', 'Technology', 'Software']",LOW
+vendors,Founded_Year,int64,NON_PII,False,Does not contain identifiable information,0,0.0,23,"[1994, 1998, 2017]",LOW
+vendors,Headquarters,object,NON_PII,False,Does not contain identifiable information,0,0.0,50,"['Sullivanton', 'Delgadoview', 'Jonathanside']",LOW
+vendors,Country,object,QUASI_PII,True,Contains 'country' - can identify when combined,0,0.0,43,[MASKED - PII DATA],MEDIUM
+vendors,Company_Size,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['small', 'large', 'medium']",LOW
+vendors,Employee_Count,int64,NON_PII,False,Does not contain identifiable information,0,0.0,40,"[21, 2683, 220]",LOW
+vendors,Annual_Revenue,int64,NON_PII,False,Does not contain identifiable information,0,0.0,50,"[428439, 40431104, 2481442]",LOW
+vendors,Total_Products,int64,NON_PII,False,Does not contain identifiable information,0,0.0,13,"[2, 14, 5]",LOW
+vendors,Total_Customers,int64,NON_PII,False,Does not contain identifiable information,0,0.0,23,"[52, 51, 41]",LOW
+vendors,Market_Focus,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['B2B', 'B2B', 'B2C']",LOW
+vendors,Support_Model,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['24/7', '24/7', '24/7']",LOW
+vendors,Deployment_Model,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['Hybrid', 'Cloud', 'Hybrid']",LOW
+vendors,Certification,object,NON_PII,False,Does not contain identifiable information,13,26.0,4,"['SOC2', nan, nan]",LOW
+vendors,Total_Revenue,int64,NON_PII,False,Does not contain identifiable information,0,0.0,50,"[8984280, 7609901, 5476946]",LOW
+vendors,Average_Contract_Value,float64,QUASI_PII,True,Contains 'age' - can identify when combined,0,0.0,50,[MASKED - PII DATA],MEDIUM
+vendors,Total_Licenses,int64,NON_PII,False,Does not contain identifiable information,0,0.0,34,"[77, 97, 72]",LOW
+customers,Customer_ID,object,QUASI_PII,True,Contains 'customer_id' - can identify when combined,0,0.0,500,[MASKED - PII DATA],MEDIUM
+customers,Company_Name,object,DIRECT_PII,True,Contains 'name' - directly identifies person,0,0.0,494,[MASKED - PII DATA],HIGH
+customers,Industry_Type,object,NON_PII,False,Does not contain identifiable information,0,0.0,10,"['Government', 'Education', 'Transportation']",LOW
+customers,Company_Size,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['large', 'medium', 'large']",LOW
+customers,Employee_Count,int64,NON_PII,False,Does not contain identifiable information,0,0.0,335,"[5902, 508, 1990]",LOW
+customers,Annual_Revenue,int64,NON_PII,False,Does not contain identifiable information,0,0.0,500,"[417326886, 18918315, 217700735]",LOW
+customers,Location,object,QUASI_PII,True,Contains 'location' - can identify when combined,0,0.0,489,[MASKED - PII DATA],MEDIUM
+customers,State,object,QUASI_PII,True,Contains 'state' - can identify when combined,0,0.0,50,[MASKED - PII DATA],MEDIUM
+customers,Country,object,QUASI_PII,True,Contains 'country' - can identify when combined,0,0.0,219,[MASKED - PII DATA],MEDIUM
+customers,Years_in_Business,int64,NON_PII,False,Does not contain identifiable information,0,0.0,50,"[27, 34, 3]",LOW
+customers,Segment,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['Standard', 'Premium', 'Standard']",LOW
+customers,IT_Budget,int64,NON_PII,False,Does not contain identifiable information,0,0.0,500,"[3765256, 3619060, 1630884]",LOW
+customers,Decision_Maker,object,NON_PII,False,Does not contain identifiable information,0,0.0,499,"['Jesse Anderson', 'Nichole Campbell', 'Tanya Bates']",LOW
+customers,Contact_Email,object,DIRECT_PII,True,Contains 'email' - directly identifies person,0,0.0,498,[MASKED - PII DATA],HIGH
+customers,Registration_Date,object,NON_PII,False,Does not contain identifiable information,0,0.0,449,"['2023-04-18', '2024-06-14', '2020-02-05']",LOW
+products,Product_ID,object,NON_PII,False,Does not contain identifiable information,0,0.0,274,"['P00001', 'P00002', 'P00003']",LOW
+products,Vendor_ID,object,NON_PII,False,Does not contain identifiable information,0,0.0,50,"['V0001', 'V0001', 'V0002']",LOW
+products,Product_Name,object,DIRECT_PII,True,Contains 'name' - directly identifies person,0,0.0,272,[MASKED - PII DATA],HIGH
+products,Product_Category,object,NON_PII,False,Does not contain identifiable information,0,0.0,10,"['HR', 'HR', 'Productivity']",LOW
+products,Launch_Date,object,NON_PII,False,Does not contain identifiable information,0,0.0,254,"['2024-10-15', '2022-09-01', '2022-03-31']",LOW
+products,License_Type,object,NON_PII,False,Does not contain identifiable information,0,0.0,6,"['Per Hour', 'Per Hour', 'Per User']",LOW
+products,Base_Price,int64,NON_PII,False,Does not contain identifiable information,0,0.0,238,"[933, 659, 211]",LOW
+products,Currency,object,NON_PII,False,Does not contain identifiable information,0,0.0,1,"['USD', 'USD', 'USD']",LOW
+products,Product_Features,int64,NON_PII,False,Does not contain identifiable information,0,0.0,13,"[6, 14, 9]",LOW
+products,Version,object,NON_PII,False,Does not contain identifiable information,0,0.0,204,"['3.7.8', '2.8.1', '2.2.5']",LOW
+products,Maturity,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['Beta', 'Legacy', 'Stable']",LOW
+products,Support_Level,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['Basic', 'Basic', 'Premium']",LOW
+products,Documentation_Quality,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['Good', 'Excellent', 'Good']",LOW
+products,API_Available,bool,NON_PII,False,Does not contain identifiable information,0,0.0,2,"[True, True, False]",LOW
+products,Integration_Complexity,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['Medium', 'High', 'Low']",LOW
+licenses,License_ID,object,NON_PII,False,Does not contain identifiable information,81,2.07,3839,"[nan, 'L000002', 'L000003']",LOW
+licenses,Customer_ID,object,QUASI_PII,True,Contains 'customer_id' - can identify when combined,79,2.02,500,[MASKED - PII DATA],MEDIUM
+licenses,Vendor_ID,object,NON_PII,False,Does not contain identifiable information,70,1.79,50,"['V0003', 'V0041', 'V0032']",LOW
+licenses,Product_ID,object,NON_PII,False,Does not contain identifiable information,84,2.14,274,"['P00018', 'P00227', 'P00156']",LOW
+licenses,Number_of_quantities_purchased,float64,NON_PII,False,Does not contain identifiable information,85,2.17,390,"[128.0, 209.0, 281.0]",LOW
+licenses,Number_of_quantities_activated,float64,NON_PII,False,Does not contain identifiable information,82,2.09,337,"[104.0, 154.0, 226.0]",LOW
+licenses,Percentage_of_quantities_deployed,float64,QUASI_PII,True,Contains 'age' - can identify when combined,70,1.79,2295,[MASKED - PII DATA],MEDIUM
+licenses,Days_since_last_quantity_purchased,float64,NON_PII,False,Does not contain identifiable information,95,2.42,1923,"[1269.0, -504.0, -731.0]",LOW
+licenses,Days_since_last_quantity_activated,float64,NON_PII,False,Does not contain identifiable information,97,2.47,1914,"[1239.0, -525.0, -761.0]",LOW
+licenses,Avg_gap_in_quantity_purchase,float64,NON_PII,False,Does not contain identifiable information,94,2.4,1155,"[149.0, 198.5, 199.0]",LOW
+licenses,Avg_gap_in_quantity_activated,float64,NON_PII,False,Does not contain identifiable information,90,2.3,1215,"[155.0, 202.25, 201.75]",LOW
+licenses,Direction_Trend_purchased_quantities,object,NON_PII,False,Does not contain identifiable information,71,1.81,3,"['Upward', 'Downward', 'Downward']",LOW
+licenses,Direction_Trend_activated_quantities,object,NON_PII,False,Does not contain identifiable information,66,1.68,3,"['Upward', 'Downward', 'Downward']",LOW
+licenses,Direction_Trend_deployed_quantities,object,NON_PII,False,Does not contain identifiable information,74,1.89,3,"['Upward', 'Downward', 'Downward']",LOW
+licenses,Deployment_Type,object,NON_PII,False,Does not contain identifiable information,84,2.14,3,"['Production', 'Production', 'Development']",LOW
+licenses,Days_since_first_quantity_purchased,float64,NON_PII,False,Does not contain identifiable information,82,2.09,1611,"[1716.0, 290.0, 65.0]",LOW
+licenses,Days_since_first_activation,float64,NON_PII,False,Does not contain identifiable information,62,1.58,1613,"[1704.0, 284.0, 46.0]",LOW
+licenses,Avg_gap_Purchase_to_Activation,float64,NON_PII,False,Does not contain identifiable information,80,2.04,244,"[13.0, 11.4, 20.2]",LOW
+licenses,Frequency_of_Product_Purchase,float64,NON_PII,False,Does not contain identifiable information,63,1.61,5,"[4.0, 5.0, 5.0]",LOW
+licenses,Recency_of_product_purchase,float64,NON_PII,False,Does not contain identifiable information,67,1.71,1930,"[1269.0, -504.0, -731.0]",LOW
+licenses,Variants,object,NON_PII,False,Does not contain identifiable information,82,2.09,535,"['V2,V3,V2', 'V2,V1,V1', 'V5,V5,V2,V3']",LOW
+licenses,Subscription_period_derived,float64,NON_PII,False,Does not contain identifiable information,80,2.04,5,"[90.0, 730.0, 365.0]",LOW
+licenses,Contract_Value,float64,NON_PII,False,Does not contain identifiable information,84,2.14,3606,"[100096.0, 51205.0, 200072.0]",LOW
+licenses,License_Start_Date,object,NON_PII,False,Does not contain identifiable information,68,1.73,1606,"['2020-04-20', '2024-03-16', '2024-10-27']",LOW
+licenses,License_End_Date,object,NON_PII,False,Does not contain identifiable information,77,1.96,2034,"['2021-10-09', '2026-06-18', '2028-01-01']",LOW
+licenses,Renewal_Status,object,NON_PII,False,Does not contain identifiable information,75,1.91,3,"['Active', 'Expired', 'Active']",LOW
+licenses,Payment_Status,object,NON_PII,False,Does not contain identifiable information,84,2.14,3,"['Pending', 'Pending', 'Pending']",LOW
+licenses,Support_Tickets,float64,NON_PII,False,Does not contain identifiable information,76,1.94,11,"[6.0, 6.0, 3.0]",LOW
+licenses,Satisfaction_Score,float64,NON_PII,False,Does not contain identifiable information,82,2.09,10,"[4.0, 6.0, 7.0]",LOW
+licenses,Churn_Risk,object,NON_PII,False,Does not contain identifiable information,73,1.86,3,"['High', 'Low', 'Low']",LOW
+licenses,Usage_Frequency,object,QUASI_PII,True,Contains 'age' - can identify when combined,77,1.96,3,[MASKED - PII DATA],MEDIUM
+licenses,Last_Login,object,NON_PII,False,Does not contain identifiable information,74,1.89,976,"['2021-12-20', '2024-12-31 00:00:00', '2024-12-31 00:00:00']",LOW
+licenses,Feature_Utilization,float64,NON_PII,False,Does not contain identifiable information,65,1.66,81,"[27.0, 93.0, 25.0]",LOW
+licenses,Integration_Count,float64,NON_PII,False,Does not contain identifiable information,79,2.02,6,"[2.0, 1.0, 1.0]",LOW
+licenses,Custom_Configuration,object,NON_PII,False,Does not contain identifiable information,81,2.07,2,"[False, False, True]",LOW
+licenses,Training_Sessions,float64,NON_PII,False,Does not contain identifiable information,83,2.12,4,"[1.0, 2.0, 2.0]",LOW
+licenses,Upgrade_History,float64,NON_PII,False,Does not contain identifiable information,77,1.96,4,"[1.0, 3.0, 2.0]",LOW
+licenses,Downgrade_History,float64,NON_PII,False,Does not contain identifiable information,75,1.91,2,"[1.0, 1.0, 0.0]",LOW
+licenses,Relative_number_of_products_purchased_from_catalogue,float64,NON_PII,False,Does not contain identifiable information,83,2.12,31,"[0.7299270072992701, 0.7299270072992701, 1.094890510948905]",LOW
+licenses,Relative_purchases_qty,float64,NON_PII,False,Does not contain identifiable information,84,2.14,3703,"[37.98219584569733, 62.01780415430267, 47.14765100671141]",LOW
+licenses,Relative_activation_qty,float64,NON_PII,False,Does not contain identifiable information,73,1.86,3676,"[40.310077519379846, 59.68992248062015, 47.578947368421055]",LOW
+licenses,Relative_activation_percentage,float64,QUASI_PII,True,Contains 'age' - can identify when combined,79,2.02,2157,[MASKED - PII DATA],MEDIUM
+licenses,Relative_Activated_Variant_percentage,float64,QUASI_PII,True,Contains 'age' - can identify when combined,82,2.09,5,[MASKED - PII DATA],MEDIUM
+licenses,Relative_variant_activation_quantity,float64,NON_PII,False,Does not contain identifiable information,74,1.89,3675,"[40.310077519379846, 59.68992248062015, 47.578947368421055]",LOW
+usage_history,Usage_ID,object,QUASI_PII,True,Contains 'age' - can identify when combined,0,0.0,76441,[MASKED - PII DATA],MEDIUM
+usage_history,License_ID,object,NON_PII,False,Does not contain identifiable information,0,0.0,3920,"['L000001', 'L000001', 'L000001']",LOW
+usage_history,Customer_ID,object,QUASI_PII,True,Contains 'customer_id' - can identify when combined,0,0.0,500,[MASKED - PII DATA],MEDIUM
+usage_history,Product_ID,object,NON_PII,False,Does not contain identifiable information,0,0.0,274,"['P00018', 'P00018', 'P00018']",LOW
+usage_history,Usage_Date,object,QUASI_PII,True,Contains 'age' - can identify when combined,0,0.0,1820,[MASKED - PII DATA],MEDIUM
+usage_history,Usage_Month,object,QUASI_PII,True,Contains 'age' - can identify when combined,0,0.0,60,[MASKED - PII DATA],MEDIUM
+usage_history,Active_Users,int64,NON_PII,False,Does not contain identifiable information,0,0.0,342,"[57, 48, 59]",LOW
+usage_history,API_Calls,int64,NON_PII,False,Does not contain identifiable information,0,0.0,9997,"[2835, 7140, 7958]",LOW
+usage_history,Data_Processed_GB,int64,NON_PII,False,Does not contain identifiable information,0,0.0,1001,"[780, 398, 179]",LOW
+usage_history,Session_Duration_Hours,int64,NON_PII,False,Does not contain identifiable information,0,0.0,24,"[22, 24, 16]",LOW
+usage_history,Feature_Usage_Score,int64,QUASI_PII,True,Contains 'age' - can identify when combined,0,0.0,101,[MASKED - PII DATA],MEDIUM
+usage_history,Error_Rate,int64,NON_PII,False,Does not contain identifiable information,0,0.0,6,"[3, 4, 0]",LOW
+usage_history,Support_Interactions,int64,NON_PII,False,Does not contain identifiable information,0,0.0,4,"[3, 1, 2]",LOW
+usage_history,Downtime_Minutes,int64,NON_PII,False,Does not contain identifiable information,0,0.0,61,"[45, 16, 22]",LOW
+usage_history,Bandwidth_Used_GB,int64,NON_PII,False,Does not contain identifiable information,0,0.0,101,"[76, 34, 17]",LOW
+usage_history,Storage_Used_GB,int64,QUASI_PII,True,Contains 'age' - can identify when combined,0,0.0,501,[MASKED - PII DATA],MEDIUM
+renewal_history,Renewal_ID,object,NON_PII,False,Does not contain identifiable information,0,0.0,5873,"['R000001', 'R000002', 'R000003']",LOW
+renewal_history,License_ID,object,NON_PII,False,Does not contain identifiable information,0,0.0,2932,"['L000001', 'L000001', 'L000002']",LOW
+renewal_history,Customer_ID,object,QUASI_PII,True,Contains 'customer_id' - can identify when combined,0,0.0,488,[MASKED - PII DATA],MEDIUM
+renewal_history,Product_ID,object,NON_PII,False,Does not contain identifiable information,0,0.0,274,"['P00018', 'P00018', 'P00227']",LOW
+renewal_history,Renewal_Date,object,NON_PII,False,Does not contain identifiable information,0,0.0,2488,"['2020-07-19', '2020-10-17', '2026-03-16']",LOW
+renewal_history,Previous_Contract_Value,int64,NON_PII,False,Does not contain identifiable information,0,0.0,2797,"[100096, 100096, 51205]",LOW
+renewal_history,New_Contract_Value,float64,NON_PII,False,Does not contain identifiable information,0,0.0,5721,"[115110.4, 94090.24, 58885.75]",LOW
+renewal_history,Renewal_Type,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['Negotiated', 'Automatic', 'Manual']",LOW
+renewal_history,Renewal_Duration,int64,NON_PII,False,Does not contain identifiable information,0,0.0,3,"[730, 730, 365]",LOW
+renewal_history,Discount_Applied,int64,NON_PII,False,Does not contain identifiable information,0,0.0,26,"[8, 6, 1]",LOW
+renewal_history,Renewal_Status,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['Declined', 'Completed', 'Pending']",LOW
+renewal_history,Negotiation_Days,int64,NON_PII,False,Does not contain identifiable information,0,0.0,31,"[7, 14, 4]",LOW
+renewal_history,Decision_Maker_Change,bool,NON_PII,False,Does not contain identifiable information,0,0.0,2,"[False, True, True]",LOW
+renewal_history,Competitive_Threat,bool,NON_PII,False,Does not contain identifiable information,0,0.0,2,"[False, False, False]",LOW
+renewal_history,Upsell_Opportunity,bool,NON_PII,False,Does not contain identifiable information,0,0.0,2,"[False, False, False]",LOW
+renewal_history,Cross_sell_Products,int64,NON_PII,False,Does not contain identifiable information,0,0.0,4,"[0, 3, 2]",LOW
+customer_summary,Customer_ID,object,QUASI_PII,True,Contains 'customer_id' - can identify when combined,0,0.0,500,[MASKED - PII DATA],MEDIUM
+customer_summary,Total_Purchased,int64,NON_PII,False,Does not contain identifiable information,0,0.0,451,"[337, 596, 1008]",LOW
+customer_summary,Total_Activated,int64,NON_PII,False,Does not contain identifiable information,0,0.0,457,"[258, 475, 833]",LOW
+customer_summary,Total_Contract_Value,int64,NON_PII,False,Does not contain identifiable information,0,0.0,500,"[151301, 393844, 462068]",LOW
+customer_summary,Avg_Contract_Value,float64,NON_PII,False,Does not contain identifiable information,0,0.0,500,"[75650.5, 131281.33, 66009.71]",LOW
+customer_summary,Total_Licenses,int64,NON_PII,False,Does not contain identifiable information,0,0.0,31,"[2, 3, 7]",LOW
+customer_summary,Avg_Satisfaction,float64,NON_PII,False,Does not contain identifiable information,0,0.0,159,"[5.0, 4.33, 2.86]",LOW
+customer_summary,Total_Support_Tickets,int64,NON_PII,False,Does not contain identifiable information,0,0.0,118,"[12, 16, 39]",LOW
+customer_summary,High_Churn_Risk_Count,int64,NON_PII,False,Does not contain identifiable information,0,0.0,15,"[1, 0, 3]",LOW
+product_performance,Product_ID,object,NON_PII,False,Does not contain identifiable information,0,0.0,274,"['P00001', 'P00002', 'P00003']",LOW
+product_performance,Unique_Customers,int64,NON_PII,False,Does not contain identifiable information,0,0.0,38,"[36, 41, 5]",LOW
+product_performance,Total_Purchased,int64,NON_PII,False,Does not contain identifiable information,0,0.0,268,"[5044, 6492, 762]",LOW
+product_performance,Total_Activated,int64,NON_PII,False,Does not contain identifiable information,0,0.0,260,"[4252, 5428, 609]",LOW
+product_performance,Total_Revenue,int64,NON_PII,False,Does not contain identifiable information,0,0.0,274,"[4706052, 4278228, 160782]",LOW
+product_performance,Avg_Contract_Value,float64,NON_PII,False,Does not contain identifiable information,0,0.0,274,"[130723.67, 104347.02, 32156.4]",LOW
+product_performance,Avg_Satisfaction,float64,NON_PII,False,Does not contain identifiable information,0,0.0,150,"[6.53, 5.41, 5.6]",LOW
+product_performance,High_Churn_Risk_Count,int64,NON_PII,False,Does not contain identifiable information,0,0.0,17,"[13, 15, 3]",LOW
+vendor_performance,Vendor_ID,object,NON_PII,False,Does not contain identifiable information,0,0.0,50,"['V0001', 'V0002', 'V0003']",LOW
+vendor_performance,Unique_Customers,int64,NON_PII,False,Does not contain identifiable information,0,0.0,23,"[52, 51, 41]",LOW
+vendor_performance,Unique_Products,int64,NON_PII,False,Does not contain identifiable information,0,0.0,13,"[2, 14, 5]",LOW
+vendor_performance,Total_Revenue,int64,NON_PII,False,Does not contain identifiable information,0,0.0,50,"[8984280, 7609901, 5476946]",LOW
+vendor_performance,Avg_Contract_Value,float64,NON_PII,False,Does not contain identifiable information,0,0.0,50,"[116678.96, 78452.59, 76068.69]",LOW
+vendor_performance,Avg_Satisfaction,float64,NON_PII,False,Does not contain identifiable information,0,0.0,39,"[5.94, 5.74, 5.71]",LOW
+vendor_performance,Total_Support_Tickets,int64,NON_PII,False,Does not contain identifiable information,0,0.0,43,"[339, 449, 388]",LOW

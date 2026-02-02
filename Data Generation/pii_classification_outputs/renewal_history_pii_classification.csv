@@ -1,0 +1,17 @@
+Table_Name,Column_Name,Data_Type,PII_Category,Is_PII,Classification_Reason,Null_Count,Null_Percentage,Unique_Values,Sample_Values,Privacy_Risk
+renewal_history,Renewal_ID,object,NON_PII,False,Does not contain identifiable information,0,0.0,5873,"['R000001', 'R000002', 'R000003']",LOW
+renewal_history,License_ID,object,NON_PII,False,Does not contain identifiable information,0,0.0,2932,"['L000001', 'L000001', 'L000002']",LOW
+renewal_history,Customer_ID,object,QUASI_PII,True,Contains 'customer_id' - can identify when combined,0,0.0,488,[MASKED - PII DATA],MEDIUM
+renewal_history,Product_ID,object,NON_PII,False,Does not contain identifiable information,0,0.0,274,"['P00018', 'P00018', 'P00227']",LOW
+renewal_history,Renewal_Date,object,NON_PII,False,Does not contain identifiable information,0,0.0,2488,"['2020-07-19', '2020-10-17', '2026-03-16']",LOW
+renewal_history,Previous_Contract_Value,int64,NON_PII,False,Does not contain identifiable information,0,0.0,2797,"[100096, 100096, 51205]",LOW
+renewal_history,New_Contract_Value,float64,NON_PII,False,Does not contain identifiable information,0,0.0,5721,"[115110.4, 94090.24, 58885.75]",LOW
+renewal_history,Renewal_Type,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['Negotiated', 'Automatic', 'Manual']",LOW
+renewal_history,Renewal_Duration,int64,NON_PII,False,Does not contain identifiable information,0,0.0,3,"[730, 730, 365]",LOW
+renewal_history,Discount_Applied,int64,NON_PII,False,Does not contain identifiable information,0,0.0,26,"[8, 6, 1]",LOW
+renewal_history,Renewal_Status,object,NON_PII,False,Does not contain identifiable information,0,0.0,3,"['Declined', 'Completed', 'Pending']",LOW
+renewal_history,Negotiation_Days,int64,NON_PII,False,Does not contain identifiable information,0,0.0,31,"[7, 14, 4]",LOW
+renewal_history,Decision_Maker_Change,bool,NON_PII,False,Does not contain identifiable information,0,0.0,2,"[False, True, True]",LOW
+renewal_history,Competitive_Threat,bool,NON_PII,False,Does not contain identifiable information,0,0.0,2,"[False, False, False]",LOW
+renewal_history,Upsell_Opportunity,bool,NON_PII,False,Does not contain identifiable information,0,0.0,2,"[False, False, False]",LOW
+renewal_history,Cross_sell_Products,int64,NON_PII,False,Does not contain identifiable information,0,0.0,4,"[0, 3, 2]",LOW

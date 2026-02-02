@@ -1,0 +1,17 @@
+Table_Name,Column_Name,Data_Type,PII_Category,Is_PII,Classification_Reason,Null_Count,Null_Percentage,Unique_Values,Sample_Values,Privacy_Risk
+usage_history,Usage_ID,object,QUASI_PII,True,Contains 'age' - can identify when combined,0,0.0,76441,[MASKED - PII DATA],MEDIUM
+usage_history,License_ID,object,NON_PII,False,Does not contain identifiable information,0,0.0,3920,"['L000001', 'L000001', 'L000001']",LOW
+usage_history,Customer_ID,object,QUASI_PII,True,Contains 'customer_id' - can identify when combined,0,0.0,500,[MASKED - PII DATA],MEDIUM
+usage_history,Product_ID,object,NON_PII,False,Does not contain identifiable information,0,0.0,274,"['P00018', 'P00018', 'P00018']",LOW
+usage_history,Usage_Date,object,QUASI_PII,True,Contains 'age' - can identify when combined,0,0.0,1820,[MASKED - PII DATA],MEDIUM
+usage_history,Usage_Month,object,QUASI_PII,True,Contains 'age' - can identify when combined,0,0.0,60,[MASKED - PII DATA],MEDIUM
+usage_history,Active_Users,int64,NON_PII,False,Does not contain identifiable information,0,0.0,342,"[57, 48, 59]",LOW
+usage_history,API_Calls,int64,NON_PII,False,Does not contain identifiable information,0,0.0,9997,"[2835, 7140, 7958]",LOW
+usage_history,Data_Processed_GB,int64,NON_PII,False,Does not contain identifiable information,0,0.0,1001,"[780, 398, 179]",LOW
+usage_history,Session_Duration_Hours,int64,NON_PII,False,Does not contain identifiable information,0,0.0,24,"[22, 24, 16]",LOW
+usage_history,Feature_Usage_Score,int64,QUASI_PII,True,Contains 'age' - can identify when combined,0,0.0,101,[MASKED - PII DATA],MEDIUM
+usage_history,Error_Rate,int64,NON_PII,False,Does not contain identifiable information,0,0.0,6,"[3, 4, 0]",LOW
+usage_history,Support_Interactions,int64,NON_PII,False,Does not contain identifiable information,0,0.0,4,"[3, 1, 2]",LOW
+usage_history,Downtime_Minutes,int64,NON_PII,False,Does not contain identifiable information,0,0.0,61,"[45, 16, 22]",LOW
+usage_history,Bandwidth_Used_GB,int64,NON_PII,False,Does not contain identifiable information,0,0.0,101,"[76, 34, 17]",LOW
+usage_history,Storage_Used_GB,int64,QUASI_PII,True,Contains 'age' - can identify when combined,0,0.0,501,[MASKED - PII DATA],MEDIUM

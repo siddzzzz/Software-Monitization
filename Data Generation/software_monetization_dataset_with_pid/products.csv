@@ -1,0 +1,275 @@
+PID,Product_ID,Vendor_ID,Product_Name,Product_Category,Launch_Date,License_Type,Base_Price,Currency,Product_Features,Version,Maturity,Support_Level,Documentation_Quality,API_Available,Integration_Complexity
+PID-9347E01E1FFF,P00001,V0001,HR None Basic,HR,2024-10-15,Per Hour,933,USD,6,3.7.8,Beta,Basic,Good,True,Medium
+PID-97CCB5C4E7AE,P00002,V0001,HR Official Pro,HR,2022-09-01,Per Hour,659,USD,14,2.8.1,Legacy,Basic,Excellent,True,High
+PID-94185B745F01,P00003,V0002,Productivity Say Premium,Productivity,2022-03-31,Per User,211,USD,9,2.2.5,Stable,Premium,Good,False,Low
+PID-25FF1111DA5B,P00004,V0002,Database Pull Enterprise,Database,2022-09-17,Per Hour,586,USD,9,1.4.8,Beta,Basic,Good,True,Low
+PID-3331A9C11036,P00005,V0002,Finance Dark Pro,Finance,2024-09-29,Per Transaction,852,USD,10,3.1.7,Beta,Basic,Poor,True,Medium
+PID-AECDC8972A91,P00006,V0002,Marketing Perform Pro,Marketing,2022-11-18,Per User,55,USD,13,1.0.5,Legacy,Enterprise,Good,False,Medium
+PID-6F846CFB5CAB,P00007,V0002,Productivity Country Enterprise,Productivity,2021-02-09,Per Hour,276,USD,6,5.1.5,Beta,Enterprise,Excellent,True,Low
+PID-0EEF3EA40D76,P00008,V0002,HR Ahead Basic,HR,2022-05-08,Per Hour,864,USD,7,4.2.7,Legacy,Premium,Excellent,False,High
+PID-EDB78ECFAB9F,P00009,V0002,Security Boy Premium,Security,2022-09-18,Unlimited,137,USD,13,1.3.2,Stable,Basic,Excellent,True,Low
+PID-C94305A8AA60,P00010,V0002,Operations Individual Basic,Operations,2021-04-02,Per User,250,USD,5,1.2.5,Stable,Premium,Poor,False,Low
+PID-4D60D4174496,P00011,V0002,Finance Final Enterprise,Finance,2020-02-14,Unlimited,787,USD,5,1.9.9,Stable,Basic,Excellent,True,Low
+PID-53ABCD2DFCCB,P00012,V0002,Finance Decade Basic,Finance,2022-12-19,Unlimited,33,USD,10,1.6.6,Legacy,Enterprise,Excellent,False,Low
+PID-667AC9D1285D,P00013,V0002,Development Mention Premium,Development,2023-10-13,Per Device,610,USD,9,2.0.3,Stable,Enterprise,Excellent,False,Medium
+PID-243AC2F53A44,P00014,V0002,Operations Like Basic,Operations,2020-05-06,Per User,653,USD,13,4.4.4,Legacy,Enterprise,Poor,False,Medium
+PID-B0CE2DAD4F7A,P00015,V0002,Marketing Head Basic,Marketing,2022-05-29,Per Transaction,221,USD,13,2.7.6,Legacy,Premium,Excellent,False,Low
+PID-98262E1ADD77,P00016,V0002,Operations Blood Premium,Operations,2022-02-05,Per GB,849,USD,12,3.6.4,Legacy,Premium,Good,True,Medium
+PID-64D433125789,P00017,V0003,HR Event Basic,HR,2021-02-24,Per GB,195,USD,8,3.1.4,Legacy,Basic,Excellent,False,High
+PID-11CECAF0CABF,P00018,V0003,Marketing Most Enterprise,Marketing,2022-07-20,Per Device,782,USD,5,3.7.8,Beta,Premium,Poor,False,Low
+PID-16F87F581A6C,P00019,V0003,Finance Keep Premium,Finance,2024-06-22,Per User,985,USD,5,2.2.2,Beta,Premium,Good,False,High
+PID-0D9D7ABB75A0,P00020,V0003,Security Case Basic,Security,2023-12-25,Per User,451,USD,10,4.7.9,Stable,Premium,Poor,True,Medium
+PID-F7EE10B98B92,P00021,V0003,HR Plan Pro,HR,2023-02-26,Per GB,142,USD,14,3.5.4,Stable,Premium,Good,False,High
+PID-D01A34E544AC,P00022,V0004,Analytics Institution Basic,Analytics,2023-01-12,Per Device,885,USD,9,5.4.0,Beta,Basic,Poor,False,Medium
+PID-F6BD531DB60A,P00023,V0004,Database Born Premium,Database,2022-09-02,Per Device,894,USD,8,4.7.0,Stable,Premium,Good,True,High
+PID-E5B60067236A,P00024,V0005,Analytics Evening Premium,Analytics,2022-11-06,Unlimited,925,USD,12,5.9.6,Beta,Basic,Good,True,High
+PID-E837256AD288,P00025,V0005,Analytics Peace Enterprise,Analytics,2024-11-23,Unlimited,358,USD,13,2.3.5,Beta,Enterprise,Good,True,High
+PID-8F52137E242B,P00026,V0005,Database Save Basic,Database,2024-06-14,Per Hour,431,USD,3,1.9.3,Beta,Premium,Excellent,True,Medium
+PID-05730EBD0C1D,P00027,V0005,Finance Move Premium,Finance,2021-06-02,Per GB,313,USD,13,5.7.3,Stable,Basic,Good,True,Low
+PID-D0A4D98D3BBA,P00028,V0005,Operations Open Premium,Operations,2024-04-01,Per GB,713,USD,9,3.2.6,Stable,Basic,Good,False,Medium
+PID-0A3A026410F1,P00029,V0006,Marketing Each Basic,Marketing,2021-08-19,Per GB,845,USD,6,4.5.6,Stable,Enterprise,Good,True,Low
+PID-B9F1897E3641,P00030,V0006,Database Save Basic,Database,2020-06-09,Per Device,28,USD,15,4.4.2,Stable,Basic,Good,False,High
+PID-3235527D56F8,P00031,V0007,Security Maintain Pro,Security,2022-09-10,Unlimited,684,USD,10,3.5.3,Stable,Enterprise,Poor,False,High
+PID-ED4B94C187F8,P00032,V0007,Security Less Premium,Security,2021-01-02,Per GB,662,USD,7,4.2.9,Beta,Enterprise,Excellent,False,Low
+PID-C0F5D33B079F,P00033,V0007,Security Way Enterprise,Security,2020-12-29,Unlimited,267,USD,8,3.3.5,Beta,Enterprise,Excellent,False,Medium
+PID-78F56E4C8C72,P00034,V0007,Security Full Enterprise,Security,2021-06-10,Per Device,363,USD,9,3.5.2,Stable,Basic,Poor,True,High
+PID-4B378AC616FD,P00035,V0008,Marketing Unit Premium,Marketing,2021-01-25,Per Device,873,USD,3,1.4.3,Legacy,Enterprise,Good,False,High
+PID-E8E82BA498F9,P00036,V0008,Marketing Project Enterprise,Marketing,2024-05-30,Per GB,170,USD,8,2.2.4,Legacy,Enterprise,Poor,False,Low
+PID-0E0B875BBD6D,P00037,V0008,Database Include Pro,Database,2022-10-18,Per User,857,USD,7,4.4.4,Beta,Enterprise,Excellent,False,Low
+PID-A0E47ACF6522,P00038,V0008,Development Fire Basic,Development,2021-08-28,Per Device,166,USD,5,3.0.8,Stable,Premium,Poor,False,Low
+PID-C6FDF797AD95,P00039,V0008,HR Build Basic,HR,2021-04-13,Per Device,30,USD,4,5.0.0,Legacy,Premium,Excellent,False,Low
+PID-B274FE7A94F6,P00040,V0008,Productivity Follow Enterprise,Productivity,2023-09-09,Unlimited,828,USD,6,2.4.0,Legacy,Basic,Poor,True,High
+PID-34C7E83D7C01,P00041,V0008,Communication Hope Pro,Communication,2021-07-11,Unlimited,51,USD,11,1.1.2,Legacy,Basic,Poor,False,High
+PID-686279FA16BB,P00042,V0008,HR Study Pro,HR,2024-08-26,Per Transaction,829,USD,5,5.3.0,Beta,Basic,Excellent,True,High
+PID-674B8504C88E,P00043,V0008,Communication Room Premium,Communication,2022-11-14,Per GB,903,USD,12,3.0.7,Legacy,Basic,Good,True,High
+PID-3BD336A3855D,P00044,V0008,Operations Choose Premium,Operations,2021-04-23,Unlimited,337,USD,4,5.2.5,Beta,Basic,Good,False,Low
+PID-C3E4D0ABD662,P00045,V0009,Productivity Technology Pro,Productivity,2024-01-07,Per User,379,USD,14,5.1.9,Beta,Premium,Excellent,False,Medium
+PID-66EEF881C862,P00046,V0009,Security Quality Enterprise,Security,2021-08-25,Per User,933,USD,12,4.5.4,Stable,Basic,Good,True,Low
+PID-9166E4A2DE5F,P00047,V0009,Analytics Method Basic,Analytics,2024-09-14,Per Transaction,213,USD,10,5.7.0,Beta,Premium,Poor,False,Medium
+PID-DD5CF97D2C3F,P00048,V0009,Finance Police Premium,Finance,2021-02-02,Per GB,234,USD,12,3.2.3,Beta,Premium,Good,True,Medium
+PID-9DB1C127D739,P00049,V0009,Communication Brother Basic,Communication,2022-12-24,Per Hour,21,USD,15,1.9.8,Stable,Premium,Poor,False,High
+PID-CF3FE63A8484,P00050,V0010,Marketing Toward Pro,Marketing,2024-09-17,Per GB,177,USD,8,4.6.3,Legacy,Premium,Poor,True,Low
+PID-A4FB2C723E60,P00051,V0010,Finance Let Basic,Finance,2022-12-30,Per Transaction,915,USD,12,4.8.1,Stable,Basic,Excellent,True,Low
+PID-A687285273BC,P00052,V0010,Database Staff Basic,Database,2021-03-13,Per Device,966,USD,10,3.3.7,Beta,Basic,Good,False,Medium
+PID-26DEE0E63578,P00053,V0010,Operations Traditional Enterprise,Operations,2023-05-08,Per Device,601,USD,10,1.5.3,Stable,Premium,Good,False,Low
+PID-444FFA844AE0,P00054,V0010,Database Color Premium,Database,2024-10-21,Per Hour,55,USD,12,1.6.5,Beta,Enterprise,Good,False,High
+PID-1FB0260B6AB2,P00055,V0010,Security Reason Basic,Security,2022-01-19,Per Transaction,747,USD,3,5.4.3,Beta,Basic,Excellent,False,Medium
+PID-DD09A683BEB6,P00056,V0010,Analytics Sister Enterprise,Analytics,2023-03-11,Per User,276,USD,8,3.8.5,Beta,Enterprise,Poor,True,Low
+PID-2DFA98E735AE,P00057,V0011,Security Style Premium,Security,2024-08-07,Per GB,122,USD,10,5.5.5,Stable,Basic,Good,False,High
+PID-5F06E59F9410,P00058,V0011,Communication Recently Premium,Communication,2020-12-25,Unlimited,748,USD,11,2.0.6,Legacy,Enterprise,Poor,True,High
+PID-5349C30FF131,P00059,V0011,Operations Feeling Pro,Operations,2024-10-24,Per Transaction,921,USD,4,4.7.0,Stable,Basic,Excellent,False,Low
+PID-B445033DD287,P00060,V0012,Analytics Police Basic,Analytics,2020-05-26,Per User,433,USD,7,1.3.5,Legacy,Premium,Excellent,True,High
+PID-BDB4B46EEDCD,P00061,V0012,Communication History Premium,Communication,2023-03-23,Per Hour,793,USD,15,4.7.4,Legacy,Premium,Good,False,Low
+PID-2EEE068894D2,P00062,V0012,HR Against Premium,HR,2021-10-21,Per Device,586,USD,3,4.7.2,Beta,Enterprise,Excellent,False,High
+PID-7C31FCC6AEE4,P00063,V0012,Finance Raise Basic,Finance,2020-07-24,Unlimited,861,USD,3,4.2.6,Legacy,Premium,Excellent,True,Medium
+PID-6E299131BD9E,P00064,V0012,Finance That Premium,Finance,2021-04-29,Per Device,821,USD,3,1.1.2,Beta,Premium,Poor,True,Medium
+PID-A945F54B00C3,P00065,V0012,Marketing Believe Enterprise,Marketing,2023-07-21,Per Hour,927,USD,5,5.2.3,Legacy,Premium,Excellent,False,High
+PID-A14C983E00DD,P00066,V0012,Database None Pro,Database,2023-10-31,Per User,966,USD,9,4.4.5,Stable,Basic,Poor,False,High
+PID-BE8CBF83F4EE,P00067,V0012,Security Need Premium,Security,2022-08-12,Per User,505,USD,8,4.3.0,Beta,Enterprise,Excellent,False,High
+PID-13F650A6A67E,P00068,V0012,Marketing Peace Enterprise,Marketing,2024-10-24,Per GB,219,USD,11,3.2.3,Stable,Premium,Good,False,High
+PID-B28EE841424E,P00069,V0012,Database Grow Basic,Database,2022-06-28,Per User,608,USD,5,1.0.3,Beta,Basic,Excellent,True,Low
+PID-0B9373C62A6B,P00070,V0012,Analytics Value Basic,Analytics,2024-01-12,Per Hour,54,USD,10,4.5.5,Legacy,Enterprise,Poor,True,Medium
+PID-23A0260B05A6,P00071,V0012,HR Everyone Premium,HR,2021-09-06,Per GB,499,USD,15,5.9.0,Legacy,Enterprise,Excellent,False,Medium
+PID-A6A54F4B2087,P00072,V0013,Security Recent Basic,Security,2022-10-19,Unlimited,718,USD,10,1.0.3,Legacy,Basic,Good,False,High
+PID-723B846B4E3C,P00073,V0013,Productivity Us Premium,Productivity,2022-05-23,Per Transaction,355,USD,4,1.2.4,Stable,Basic,Excellent,False,High
+PID-2FFA2245A4E9,P00074,V0013,Finance Rise Premium,Finance,2023-03-10,Unlimited,560,USD,14,2.3.2,Legacy,Basic,Poor,True,Low
+PID-F38CB69E9674,P00075,V0013,Analytics Assume Premium,Analytics,2021-04-16,Per GB,317,USD,15,5.7.1,Legacy,Premium,Excellent,False,Low
+PID-996C844FEC86,P00076,V0013,Finance Man Basic,Finance,2022-05-09,Per GB,33,USD,8,3.4.2,Stable,Premium,Poor,True,High
+PID-7F4E57BB6E83,P00077,V0013,Marketing Difficult Enterprise,Marketing,2024-08-04,Per Hour,740,USD,6,2.1.5,Beta,Enterprise,Good,False,Medium
+PID-35440547B12C,P00078,V0014,Database Available Pro,Database,2020-12-29,Unlimited,376,USD,15,4.5.8,Beta,Enterprise,Excellent,True,Low
+PID-1E44CDDEF6E8,P00079,V0014,Analytics Stand Premium,Analytics,2020-01-02,Per Transaction,107,USD,4,3.0.1,Stable,Premium,Good,True,Low
+PID-EE27D7AD2D13,P00080,V0015,Analytics Produce Basic,Analytics,2022-07-04,Per Transaction,474,USD,9,4.9.1,Stable,Enterprise,Poor,True,Low
+PID-4C732B7B4570,P00081,V0015,Marketing Sell Basic,Marketing,2021-06-02,Per Device,821,USD,10,2.6.1,Legacy,Enterprise,Excellent,True,High
+PID-C77BBE05758C,P00082,V0016,Communication Physical Premium,Communication,2024-04-30,Per Transaction,836,USD,5,3.6.8,Legacy,Basic,Good,True,Low
+PID-C8FBEE80A175,P00083,V0016,Finance Teach Premium,Finance,2023-09-18,Per GB,80,USD,3,1.6.7,Beta,Basic,Good,False,High
+PID-956BCD5CE19C,P00084,V0016,HR Environmental Basic,HR,2023-05-02,Per Device,976,USD,14,4.7.0,Beta,Enterprise,Good,False,Low
+PID-FAC8076A2AF4,P00085,V0016,Security Someone Premium,Security,2023-05-09,Per Transaction,287,USD,6,4.8.9,Legacy,Basic,Poor,False,Low
+PID-C79E3CF29531,P00086,V0016,Database Paper Premium,Database,2022-09-12,Per User,980,USD,13,3.5.3,Beta,Basic,Poor,True,High
+PID-96CA3AA643B2,P00087,V0017,Development Want Enterprise,Development,2021-04-08,Per Transaction,80,USD,7,3.0.7,Stable,Basic,Poor,True,Medium
+PID-0EE3354A3054,P00088,V0017,Security Military Pro,Security,2024-09-29,Per GB,371,USD,12,5.4.1,Stable,Basic,Good,False,High
+PID-4BA6244434CB,P00089,V0017,Analytics Pass Enterprise,Analytics,2020-01-13,Per GB,737,USD,13,1.1.2,Legacy,Basic,Good,True,Medium
+PID-D1A0A7BD5933,P00090,V0017,Analytics Wind Enterprise,Analytics,2021-10-26,Per Device,738,USD,4,2.5.4,Legacy,Basic,Poor,False,Low
+PID-7B1D26ED31F2,P00091,V0018,HR Focus Basic,HR,2023-08-15,Per Device,344,USD,7,2.4.2,Stable,Enterprise,Poor,True,Low
+PID-0818185221F0,P00092,V0018,Database Teach Basic,Database,2021-06-14,Per GB,310,USD,14,5.7.9,Beta,Basic,Excellent,False,High
+PID-14E084BE0FBF,P00093,V0018,Finance Style Pro,Finance,2020-02-07,Per Hour,371,USD,5,5.7.0,Stable,Enterprise,Excellent,False,Medium
+PID-71C60EFD9CD3,P00094,V0018,Finance From Enterprise,Finance,2022-01-12,Per Transaction,117,USD,10,3.3.7,Legacy,Enterprise,Excellent,False,High
+PID-3B0D080F6826,P00095,V0018,Operations Market Pro,Operations,2020-05-14,Per User,152,USD,11,4.7.9,Legacy,Premium,Excellent,False,High
+PID-EF461B11020F,P00096,V0019,Communication Issue Basic,Communication,2020-10-16,Per Device,729,USD,4,1.9.6,Stable,Enterprise,Good,True,Medium
+PID-78FACED354B4,P00097,V0019,Communication Interesting Basic,Communication,2024-09-22,Per Hour,512,USD,10,4.4.9,Legacy,Premium,Poor,False,High
+PID-E2A24CB5E7B3,P00098,V0020,Development Manage Basic,Development,2023-05-24,Per GB,710,USD,9,5.4.4,Stable,Enterprise,Excellent,True,Medium
+PID-B7C3DF572DE8,P00099,V0020,Communication Building Pro,Communication,2023-01-17,Per GB,99,USD,10,5.4.2,Legacy,Enterprise,Good,True,High
+PID-07C47576E292,P00100,V0020,Operations Sit Pro,Operations,2023-07-26,Per Device,730,USD,4,2.4.3,Legacy,Premium,Excellent,False,Medium
+PID-69FC1C83D6E2,P00101,V0020,Finance Everything Premium,Finance,2021-12-10,Per User,789,USD,15,1.3.0,Stable,Enterprise,Poor,False,High
+PID-B8309513B06B,P00102,V0021,Security Rich Basic,Security,2024-05-21,Per Device,237,USD,8,5.3.6,Legacy,Enterprise,Good,False,High
+PID-55454C0079AF,P00103,V0021,Marketing Third Basic,Marketing,2021-04-21,Per Device,741,USD,9,2.1.9,Legacy,Enterprise,Good,True,Low
+PID-12A766B5B207,P00104,V0021,Development Law Pro,Development,2022-07-25,Per Transaction,635,USD,3,4.1.5,Legacy,Enterprise,Poor,False,Medium
+PID-B55652E6855D,P00105,V0021,Security Democrat Enterprise,Security,2022-10-03,Per GB,686,USD,7,3.7.8,Beta,Enterprise,Excellent,False,Medium
+PID-9E903F384AB9,P00106,V0021,HR Executive Basic,HR,2020-04-28,Per Device,13,USD,4,4.9.4,Beta,Enterprise,Good,True,Medium
+PID-19B266F0761B,P00107,V0021,Marketing Discuss Enterprise,Marketing,2023-07-30,Unlimited,644,USD,15,1.7.9,Beta,Basic,Poor,True,High
+PID-0C171B36CEC3,P00108,V0021,Database Recently Basic,Database,2021-12-28,Per Hour,818,USD,13,4.4.6,Beta,Basic,Good,True,High
+PID-7F612561274B,P00109,V0021,HR Smile Enterprise,HR,2020-02-29,Per Device,922,USD,5,5.5.1,Stable,Enterprise,Poor,True,Medium
+PID-3517899A9FB2,P00110,V0022,Analytics Now Pro,Analytics,2024-12-09,Per Hour,928,USD,3,4.0.0,Legacy,Premium,Poor,True,Medium
+PID-A2EF07A384AF,P00111,V0022,Analytics Order Enterprise,Analytics,2022-10-18,Per User,978,USD,3,1.1.1,Stable,Premium,Excellent,False,High
+PID-4537E7D18922,P00112,V0022,Analytics Already Enterprise,Analytics,2024-01-12,Unlimited,20,USD,13,3.1.8,Stable,Premium,Good,False,Medium
+PID-9FD2FD28088D,P00113,V0022,Development Share Premium,Development,2020-03-11,Per GB,555,USD,15,3.6.8,Stable,Enterprise,Excellent,True,High
+PID-E33715EF068C,P00114,V0022,HR Traditional Basic,HR,2023-10-20,Per User,548,USD,14,4.5.3,Stable,Enterprise,Good,False,Medium
+PID-D052A6E11C54,P00115,V0023,Productivity Name Enterprise,Productivity,2021-11-02,Per GB,554,USD,15,1.4.2,Legacy,Enterprise,Excellent,True,Low
+PID-BFF8BB928458,P00116,V0023,Communication Low Basic,Communication,2020-05-07,Per GB,222,USD,9,5.4.6,Stable,Basic,Excellent,True,High
+PID-DCFB2A878766,P00117,V0023,Development Commercial Pro,Development,2023-03-15,Per Device,835,USD,8,4.2.4,Beta,Enterprise,Excellent,True,Medium
+PID-B8A9B598556A,P00118,V0023,Communication Campaign Pro,Communication,2021-01-19,Per Transaction,540,USD,12,1.3.1,Stable,Basic,Good,False,Medium
+PID-95F9C8C433F3,P00119,V0024,Development Generation Basic,Development,2020-09-17,Per User,517,USD,11,1.0.6,Legacy,Basic,Good,False,High
+PID-D2FFA97E1871,P00120,V0024,HR Citizen Premium,HR,2023-02-10,Per Transaction,707,USD,15,2.7.1,Stable,Enterprise,Poor,True,High
+PID-5A1130049962,P00121,V0024,Productivity Image Enterprise,Productivity,2021-02-01,Per Device,458,USD,15,5.0.4,Beta,Enterprise,Poor,False,High
+PID-016AD0C27AA4,P00122,V0025,HR Behavior Enterprise,HR,2020-04-10,Per GB,804,USD,4,5.0.3,Beta,Enterprise,Excellent,True,High
+PID-397436B9688F,P00123,V0025,Database All Premium,Database,2021-08-09,Per Device,656,USD,9,4.7.8,Legacy,Enterprise,Excellent,False,High
+PID-EF4F3927D79B,P00124,V0025,Analytics Just Enterprise,Analytics,2020-12-11,Per Hour,629,USD,4,4.4.2,Beta,Premium,Good,True,Medium
+PID-DE3FE346D2A9,P00125,V0026,Database Budget Basic,Database,2023-08-22,Per Hour,47,USD,8,1.6.7,Stable,Premium,Poor,True,Low
+PID-8E204C025716,P00126,V0026,Operations Teach Basic,Operations,2023-11-18,Per User,534,USD,3,3.3.9,Legacy,Premium,Excellent,False,Low
+PID-8E962D957BD8,P00127,V0026,Marketing Always Basic,Marketing,2022-01-04,Per Device,951,USD,5,5.2.9,Beta,Basic,Good,True,Low
+PID-5559BDFFF4DE,P00128,V0026,Analytics Skill Premium,Analytics,2024-03-06,Per GB,407,USD,10,5.0.3,Stable,Enterprise,Poor,False,High
+PID-6EB46FE6E1E8,P00129,V0026,Database Foreign Basic,Database,2020-10-18,Per Hour,771,USD,11,5.7.2,Legacy,Premium,Good,False,Low
+PID-EA05A93A56B8,P00130,V0026,Operations Herself Basic,Operations,2021-06-10,Per GB,964,USD,13,1.5.7,Beta,Premium,Poor,True,Medium
+PID-86ECEDD7DE1C,P00131,V0026,Analytics Smile Pro,Analytics,2024-08-22,Per Hour,197,USD,3,2.8.2,Legacy,Enterprise,Poor,False,High
+PID-6A72AF65A0A4,P00132,V0026,Operations Same Premium,Operations,2024-07-30,Unlimited,673,USD,9,4.5.6,Stable,Premium,Poor,False,Low
+PID-EEE2199F5300,P00133,V0026,Analytics Any Enterprise,Analytics,2023-04-27,Unlimited,95,USD,13,3.8.3,Stable,Premium,Excellent,False,Medium
+PID-C49B49D44CDF,P00134,V0027,Operations Close Basic,Operations,2020-04-16,Unlimited,281,USD,13,5.9.4,Beta,Enterprise,Poor,True,Medium
+PID-18660A1DDD4A,P00135,V0027,Communication Executive Enterprise,Communication,2024-01-17,Per Device,797,USD,3,2.1.0,Beta,Basic,Excellent,True,High
+PID-61ECF3017DD4,P00136,V0027,Productivity What Pro,Productivity,2020-08-12,Per Device,552,USD,5,4.5.0,Legacy,Enterprise,Good,True,Medium
+PID-3717AD517305,P00137,V0027,Operations Black Basic,Operations,2020-08-30,Per Hour,720,USD,8,5.3.8,Legacy,Basic,Excellent,False,Medium
+PID-DCD67B3B3062,P00138,V0027,Security Society Pro,Security,2020-09-26,Per GB,64,USD,14,2.2.9,Beta,Premium,Poor,False,Medium
+PID-64806BE2E3FB,P00139,V0028,Operations Run Premium,Operations,2023-03-03,Unlimited,435,USD,12,4.9.8,Legacy,Enterprise,Excellent,False,Low
+PID-05E215EE317D,P00140,V0028,Productivity Through Enterprise,Productivity,2020-12-04,Per Device,410,USD,12,4.1.1,Beta,Premium,Excellent,False,High
+PID-1779D77A5E5F,P00141,V0028,Analytics Require Pro,Analytics,2020-07-30,Per Hour,232,USD,5,4.3.7,Legacy,Enterprise,Excellent,True,Low
+PID-408946F2092F,P00142,V0029,Security So Premium,Security,2020-06-17,Unlimited,295,USD,8,5.1.2,Legacy,Enterprise,Poor,True,Low
+PID-BF1352936AB0,P00143,V0029,Security Nothing Pro,Security,2020-10-26,Per User,422,USD,8,2.7.3,Stable,Basic,Poor,False,High
+PID-050D52E5B23E,P00144,V0029,Security Write Premium,Security,2023-12-12,Per GB,148,USD,7,5.9.3,Legacy,Basic,Excellent,True,Low
+PID-4C6596605480,P00145,V0030,Analytics Style Premium,Analytics,2020-03-09,Unlimited,713,USD,8,5.8.8,Stable,Premium,Excellent,False,Medium
+PID-CB7B8D14A2C0,P00146,V0030,Database Effect Pro,Database,2024-11-14,Per Transaction,873,USD,3,5.9.7,Stable,Enterprise,Poor,True,Low
+PID-9AFB0E8BE7D0,P00147,V0030,Database Soon Premium,Database,2020-11-11,Per Transaction,326,USD,6,4.7.3,Stable,Basic,Excellent,False,Low
+PID-F5E1999E27BC,P00148,V0030,Marketing Hear Basic,Marketing,2022-12-21,Per Device,713,USD,7,3.8.5,Legacy,Basic,Poor,True,Low
+PID-7C35CBDDCEFF,P00149,V0031,Operations Necessary Pro,Operations,2021-11-26,Per User,861,USD,4,4.5.3,Legacy,Premium,Excellent,True,High
+PID-0FE328F297C3,P00150,V0031,Communication System Enterprise,Communication,2024-09-26,Per Transaction,628,USD,4,4.7.9,Beta,Premium,Good,False,High
+PID-C1FD66BD7DB2,P00151,V0031,Database Minute Enterprise,Database,2020-08-15,Per Transaction,219,USD,8,4.2.4,Legacy,Enterprise,Good,True,Low
+PID-BA1895887401,P00152,V0031,Finance Modern Pro,Finance,2022-10-19,Per GB,772,USD,4,5.4.0,Stable,Enterprise,Poor,True,Low
+PID-65A9CCE782B7,P00153,V0031,Analytics Enter Enterprise,Analytics,2023-11-10,Per Hour,728,USD,9,3.5.4,Beta,Enterprise,Excellent,False,High
+PID-1BA6CDEEF60A,P00154,V0031,Analytics Door Premium,Analytics,2020-11-17,Per GB,544,USD,7,5.5.7,Stable,Enterprise,Good,True,Medium
+PID-8E8B8EE59B2D,P00155,V0031,Communication A Basic,Communication,2021-03-16,Per Device,651,USD,12,2.8.1,Beta,Basic,Excellent,False,Low
+PID-B84D2F94CF0B,P00156,V0032,Marketing I Enterprise,Marketing,2022-08-04,Per Device,712,USD,8,1.8.2,Stable,Enterprise,Excellent,True,Low
+PID-7E8090DC57D7,P00157,V0032,Marketing Provide Enterprise,Marketing,2021-04-07,Per Hour,63,USD,10,4.1.2,Legacy,Basic,Good,True,Medium
+PID-4E7CCB3EB319,P00158,V0032,Marketing Put Pro,Marketing,2024-07-30,Per Hour,850,USD,8,1.3.4,Beta,Basic,Excellent,False,Low
+PID-E0864D4BB9FC,P00159,V0033,Marketing Art Enterprise,Marketing,2021-10-13,Per GB,741,USD,10,4.6.2,Beta,Premium,Poor,False,High
+PID-499C6616DE21,P00160,V0033,Finance Edge Enterprise,Finance,2023-06-22,Per User,126,USD,11,4.9.5,Beta,Basic,Poor,False,Low
+PID-28C7F814416C,P00161,V0033,Productivity His Premium,Productivity,2023-09-17,Unlimited,409,USD,14,1.2.8,Stable,Basic,Excellent,True,High
+PID-D453D67A132A,P00162,V0033,Operations Particularly Basic,Operations,2023-09-04,Per Device,730,USD,15,1.7.7,Stable,Enterprise,Poor,False,Low
+PID-7477412DABE0,P00163,V0034,Analytics Help Enterprise,Analytics,2021-01-06,Per Hour,206,USD,8,3.9.5,Legacy,Basic,Poor,True,High
+PID-A47ED6762765,P00164,V0034,Security Last Pro,Security,2024-08-11,Per Transaction,672,USD,15,3.5.6,Beta,Premium,Excellent,False,Medium
+PID-F9AF16F9840E,P00165,V0034,Analytics Few Enterprise,Analytics,2021-02-03,Per Transaction,671,USD,3,4.1.1,Beta,Premium,Good,True,Medium
+PID-E9CCF3192E95,P00166,V0034,Analytics Feeling Basic,Analytics,2020-03-30,Per Transaction,324,USD,8,5.8.2,Stable,Premium,Good,True,Medium
+PID-ADF9B4F224F6,P00167,V0034,Security Green Premium,Security,2021-06-24,Per User,537,USD,6,2.1.0,Stable,Basic,Poor,True,High
+PID-FF6FED175DA5,P00168,V0034,HR Spring Basic,HR,2024-12-11,Per User,589,USD,6,4.5.9,Beta,Premium,Poor,True,Low
+PID-399BF1A0FC9E,P00169,V0034,Development Leader Basic,Development,2022-12-16,Unlimited,555,USD,5,2.0.2,Stable,Premium,Good,False,High
+PID-B02E222C5F8F,P00170,V0034,Security Move Pro,Security,2023-09-12,Per Device,74,USD,3,1.7.7,Legacy,Premium,Excellent,True,Low
+PID-49CB29CF6223,P00171,V0034,Communication Skill Pro,Communication,2022-09-14,Per Device,863,USD,15,1.7.5,Stable,Basic,Excellent,True,High
+PID-2C0142CFD095,P00172,V0034,Marketing Weight Premium,Marketing,2021-10-16,Per Device,759,USD,9,5.1.0,Beta,Premium,Excellent,False,Low
+PID-385E53A91363,P00173,V0034,Analytics Born Premium,Analytics,2021-12-10,Per GB,506,USD,12,2.0.2,Beta,Basic,Good,True,Medium
+PID-A0E6AADCC61F,P00174,V0034,Finance Commercial Pro,Finance,2020-10-25,Per GB,709,USD,6,4.7.9,Beta,Enterprise,Excellent,False,Medium
+PID-4355BBAFB582,P00175,V0034,Database Theory Enterprise,Database,2020-04-13,Unlimited,262,USD,8,1.8.7,Stable,Enterprise,Excellent,False,Low
+PID-939DF70506A9,P00176,V0034,Operations Base Pro,Operations,2023-11-26,Per Hour,848,USD,14,3.8.5,Legacy,Premium,Excellent,True,High
+PID-FAA6309B93DB,P00177,V0034,Productivity International Enterprise,Productivity,2023-07-11,Per User,304,USD,4,2.5.5,Stable,Premium,Good,False,Low
+PID-990E8E1B6AB9,P00178,V0034,Productivity Moment Pro,Productivity,2020-07-21,Per GB,647,USD,11,1.8.2,Stable,Enterprise,Good,False,Low
+PID-989AE861C1D4,P00179,V0034,Operations Business Pro,Operations,2021-06-21,Per Transaction,567,USD,8,4.7.5,Legacy,Premium,Excellent,True,Low
+PID-D7E08BC18DF4,P00180,V0034,Marketing Shake Premium,Marketing,2022-05-04,Per Transaction,712,USD,8,2.2.3,Stable,Premium,Excellent,False,High
+PID-CD7933606F7D,P00181,V0034,HR Future Basic,HR,2024-07-03,Unlimited,368,USD,4,1.4.0,Beta,Premium,Excellent,True,Medium
+PID-CADCC836B65A,P00182,V0035,Finance Page Enterprise,Finance,2024-05-24,Per GB,26,USD,7,2.4.4,Beta,Enterprise,Excellent,False,Low
+PID-3CC9244FB934,P00183,V0035,Database Town Premium,Database,2020-04-11,Per User,747,USD,6,4.3.4,Legacy,Basic,Good,True,Low
+PID-6634AFB99AF6,P00184,V0035,Security Final Enterprise,Security,2021-05-19,Per Device,811,USD,10,5.9.8,Beta,Basic,Good,False,Low
+PID-57F8461E3E58,P00185,V0035,Security Space Basic,Security,2020-07-15,Unlimited,413,USD,15,2.5.5,Legacy,Basic,Poor,True,Medium
+PID-E4ECF8751CBF,P00186,V0035,Operations Majority Basic,Operations,2022-09-08,Unlimited,972,USD,10,1.6.6,Stable,Enterprise,Excellent,False,Low
+PID-29DAF17CABFF,P00187,V0035,Productivity View Basic,Productivity,2020-06-12,Per Hour,774,USD,12,1.6.7,Beta,Basic,Excellent,False,Low
+PID-4F555DB9CAB1,P00188,V0035,Database Blood Enterprise,Database,2021-12-18,Per Device,290,USD,9,2.5.9,Beta,Premium,Good,False,Medium
+PID-0C151E287863,P00189,V0035,HR Pm Pro,HR,2020-03-01,Per Transaction,659,USD,7,2.8.5,Stable,Premium,Excellent,False,High
+PID-C02603C23714,P00190,V0035,Development Though Pro,Development,2020-01-16,Per User,145,USD,14,5.2.2,Beta,Enterprise,Excellent,True,Medium
+PID-02E8B7BCFADE,P00191,V0035,Productivity Relate Premium,Productivity,2022-04-15,Per Hour,757,USD,9,1.2.6,Legacy,Enterprise,Excellent,True,High
+PID-3D57E758ACD4,P00192,V0035,Development Move Pro,Development,2024-02-25,Per Device,679,USD,12,1.3.8,Legacy,Enterprise,Excellent,True,Low
+PID-3EE2B10F9CFE,P00193,V0035,Marketing Difference Basic,Marketing,2022-02-05,Per Transaction,950,USD,10,5.1.8,Beta,Basic,Excellent,True,High
+PID-6FC6979E76BB,P00194,V0036,Communication Choice Enterprise,Communication,2024-05-09,Per Transaction,227,USD,9,3.6.1,Stable,Enterprise,Excellent,False,High
+PID-CD7D578977C2,P00195,V0036,Productivity Part Premium,Productivity,2021-09-28,Per Hour,965,USD,3,3.8.8,Legacy,Premium,Poor,True,High
+PID-22F3EA74C240,P00196,V0036,Productivity Meet Premium,Productivity,2021-09-25,Unlimited,686,USD,11,4.5.6,Legacy,Enterprise,Poor,True,Low
+PID-5796E2A52799,P00197,V0036,Marketing Sometimes Basic,Marketing,2021-08-02,Per Hour,749,USD,10,2.1.4,Beta,Premium,Excellent,True,High
+PID-E2D002E62D41,P00198,V0036,Finance Body Basic,Finance,2023-03-05,Per User,658,USD,10,1.0.2,Beta,Enterprise,Poor,False,Medium
+PID-1F85C900CB32,P00199,V0036,Development Send Premium,Development,2024-08-25,Unlimited,106,USD,13,1.0.7,Stable,Enterprise,Excellent,True,High
+PID-F1DD62983465,P00200,V0036,HR Form Pro,HR,2020-09-28,Per GB,640,USD,15,2.9.7,Stable,Premium,Poor,True,Low
+PID-A912BAA13E1E,P00201,V0036,Marketing Sure Pro,Marketing,2024-04-24,Per Transaction,148,USD,4,4.3.7,Beta,Premium,Poor,False,High
+PID-F9FFE4A855EE,P00202,V0036,Communication Onto Pro,Communication,2022-01-30,Per User,233,USD,10,1.8.0,Beta,Basic,Excellent,False,High
+PID-0BE69E517683,P00203,V0036,HR Know Pro,HR,2023-09-09,Unlimited,401,USD,15,2.3.3,Beta,Enterprise,Excellent,False,Medium
+PID-98D2B9585878,P00204,V0037,Security Listen Premium,Security,2021-02-27,Per User,907,USD,15,3.1.4,Legacy,Basic,Excellent,True,Medium
+PID-AF029B32D973,P00205,V0037,Analytics Both Premium,Analytics,2022-11-16,Per User,773,USD,4,1.7.3,Stable,Premium,Good,True,Low
+PID-B164821FA087,P00206,V0037,Productivity Another Premium,Productivity,2023-10-02,Per Transaction,808,USD,10,5.9.8,Stable,Basic,Poor,False,Medium
+PID-4F7D0F687F79,P00207,V0038,Analytics While Premium,Analytics,2024-05-17,Per Device,351,USD,13,5.1.1,Stable,Premium,Excellent,True,Low
+PID-D589D9718AAB,P00208,V0038,Analytics Dinner Pro,Analytics,2022-06-13,Per Device,656,USD,5,5.7.2,Beta,Enterprise,Poor,False,High
+PID-6816E1D7702A,P00209,V0038,Finance Cold Basic,Finance,2020-04-30,Per Device,293,USD,5,3.5.7,Beta,Enterprise,Poor,False,Low
+PID-B8D9C9665736,P00210,V0039,Marketing Impact Basic,Marketing,2022-12-11,Per Device,929,USD,11,3.1.5,Legacy,Enterprise,Good,False,Medium
+PID-84F4EEE98CA7,P00211,V0039,Finance Baby Enterprise,Finance,2023-12-09,Per Device,72,USD,4,5.3.3,Beta,Basic,Excellent,False,High
+PID-3AF43A8060D5,P00212,V0039,Productivity Court Premium,Productivity,2020-06-30,Per User,295,USD,10,3.0.7,Beta,Premium,Poor,True,High
+PID-5C2D893DF64F,P00213,V0039,Development Interesting Basic,Development,2024-06-25,Per Transaction,491,USD,5,3.5.7,Legacy,Basic,Poor,True,High
+PID-805A4992B440,P00214,V0039,Database Business Pro,Database,2021-03-11,Per GB,109,USD,14,2.8.1,Stable,Premium,Excellent,True,Low
+PID-A3384ED316B7,P00215,V0039,Communication Current Basic,Communication,2020-07-29,Per Device,707,USD,12,2.0.5,Stable,Enterprise,Poor,True,Low
+PID-52CF5C920715,P00216,V0039,Development Table Premium,Development,2021-08-29,Unlimited,621,USD,3,1.1.9,Legacy,Enterprise,Poor,False,High
+PID-6ACF0692AD6C,P00217,V0039,Development Every Pro,Development,2023-02-26,Per Transaction,888,USD,4,5.6.9,Legacy,Enterprise,Excellent,True,High
+PID-0089234B800E,P00218,V0039,HR Animal Enterprise,HR,2020-06-01,Per Device,786,USD,8,5.1.1,Stable,Premium,Good,False,Medium
+PID-F5FDDD0C7E88,P00219,V0039,Analytics Buy Premium,Analytics,2023-12-03,Unlimited,395,USD,7,5.8.8,Legacy,Basic,Excellent,False,Low
+PID-3C01FE5DD331,P00220,V0040,Database Best Premium,Database,2021-01-26,Per Transaction,410,USD,8,2.8.2,Beta,Premium,Poor,True,Low
+PID-809BAEDD3051,P00221,V0040,Marketing Lawyer Basic,Marketing,2024-02-03,Per User,320,USD,10,2.7.6,Beta,Enterprise,Poor,True,High
+PID-06DB461292E5,P00222,V0040,Analytics Task Premium,Analytics,2024-06-15,Per Transaction,281,USD,13,1.9.6,Stable,Premium,Good,True,Low
+PID-4DDA97434B79,P00223,V0040,Development Establish Pro,Development,2020-04-13,Per Transaction,327,USD,13,1.7.6,Legacy,Enterprise,Good,True,Low
+PID-E199D95807B7,P00224,V0040,HR Military Basic,HR,2024-05-22,Per Device,756,USD,3,2.6.8,Legacy,Basic,Good,True,Medium
+PID-36CE87504415,P00225,V0041,Finance Power Premium,Finance,2022-10-28,Unlimited,443,USD,8,1.2.6,Legacy,Enterprise,Excellent,True,High
+PID-978E4519B261,P00226,V0041,Finance Democratic Basic,Finance,2023-03-25,Per Transaction,812,USD,5,2.7.9,Stable,Basic,Poor,False,Low
+PID-F5FA2560BAD7,P00227,V0041,Operations Performance Basic,Operations,2022-10-22,Unlimited,245,USD,9,2.1.6,Stable,Premium,Excellent,True,High
+PID-E66D3AC25FF8,P00228,V0041,Security Medical Enterprise,Security,2021-04-21,Per Transaction,979,USD,15,5.0.3,Stable,Basic,Excellent,False,Low
+PID-F1C390AEABD0,P00229,V0041,HR Attention Enterprise,HR,2022-08-25,Unlimited,623,USD,11,1.0.6,Beta,Enterprise,Excellent,True,Medium
+PID-CAFCA2E5277D,P00230,V0042,Database Five Premium,Database,2023-10-23,Per Transaction,517,USD,13,2.1.5,Stable,Enterprise,Good,True,Low
+PID-B2291127B9B5,P00231,V0042,Analytics Away Basic,Analytics,2020-01-29,Per Device,634,USD,7,5.4.1,Stable,Enterprise,Poor,True,Low
+PID-B11635CF9D57,P00232,V0042,Security Arm Premium,Security,2020-05-09,Per Device,717,USD,9,5.6.1,Stable,Enterprise,Poor,True,Low
+PID-36EF0A307F8F,P00233,V0043,Security Because Enterprise,Security,2024-08-17,Per GB,482,USD,8,4.4.2,Stable,Enterprise,Good,True,Low
+PID-4926A692F3D7,P00234,V0043,Marketing Stage Basic,Marketing,2022-04-07,Per User,840,USD,14,3.0.7,Legacy,Enterprise,Excellent,True,High
+PID-F8E786285C33,P00235,V0044,Productivity Shoulder Enterprise,Productivity,2023-10-13,Unlimited,636,USD,7,5.5.7,Legacy,Enterprise,Poor,False,High
+PID-1ACB1DE2BCC9,P00236,V0044,Communication Get Pro,Communication,2023-06-18,Per Device,909,USD,11,1.4.7,Beta,Enterprise,Poor,False,Medium
+PID-01A76FEC301A,P00237,V0044,Analytics Beautiful Enterprise,Analytics,2024-05-16,Per GB,242,USD,9,3.5.1,Legacy,Enterprise,Excellent,True,High
+PID-1683C56EDCEC,P00238,V0044,Operations Just Premium,Operations,2021-04-05,Per Hour,697,USD,9,5.9.8,Beta,Enterprise,Poor,False,Low
+PID-AE040DED4B3C,P00239,V0044,HR Seven Basic,HR,2021-08-22,Per GB,108,USD,3,5.7.2,Stable,Premium,Good,False,Medium
+PID-8710F32AD8DD,P00240,V0044,Marketing Stuff Enterprise,Marketing,2023-03-29,Per Transaction,43,USD,7,3.9.5,Stable,Basic,Good,True,Medium
+PID-C83CB2316278,P00241,V0044,Finance And Basic,Finance,2022-05-16,Unlimited,357,USD,6,2.5.6,Stable,Basic,Poor,False,Medium
+PID-A84C8DDFEADC,P00242,V0044,Analytics Although Premium,Analytics,2024-10-22,Per User,314,USD,9,2.4.8,Legacy,Basic,Good,True,Medium
+PID-49F4001E9F75,P00243,V0044,Marketing Model Pro,Marketing,2022-02-02,Per User,495,USD,13,3.1.9,Legacy,Premium,Excellent,True,High
+PID-E77B20A4E73E,P00244,V0044,Finance Any Enterprise,Finance,2022-07-27,Per Hour,586,USD,6,3.2.6,Stable,Premium,Good,False,Low
+PID-9DF02FF2F3F2,P00245,V0044,Productivity Role Pro,Productivity,2022-05-08,Per User,767,USD,6,2.0.7,Legacy,Basic,Good,True,Low
+PID-36CAF2F54816,P00246,V0044,Finance Eye Premium,Finance,2024-05-27,Per Hour,644,USD,11,4.9.4,Legacy,Basic,Excellent,False,Medium
+PID-B81CBD8011B5,P00247,V0044,Development Sometimes Enterprise,Development,2022-03-22,Per User,628,USD,14,1.6.0,Stable,Premium,Good,True,Low
+PID-5AF71D961F57,P00248,V0044,Analytics Do Premium,Analytics,2023-02-07,Per GB,493,USD,10,4.3.2,Stable,Basic,Poor,True,Medium
+PID-739B331CA0ED,P00249,V0044,Marketing Security Enterprise,Marketing,2022-04-04,Per Device,126,USD,6,4.9.3,Stable,Basic,Excellent,True,Medium
+PID-414350D05A39,P00250,V0044,Communication Fire Enterprise,Communication,2023-01-29,Per User,255,USD,4,2.9.6,Legacy,Basic,Poor,True,High
+PID-2506FF73CC71,P00251,V0045,Security Professional Pro,Security,2022-11-20,Per Device,474,USD,4,5.3.4,Legacy,Basic,Poor,False,High
+PID-67BA4FAB909B,P00252,V0045,Productivity Would Pro,Productivity,2023-09-30,Per GB,852,USD,6,2.4.8,Stable,Basic,Good,True,Low
+PID-A8B0B0D55B45,P00253,V0045,Communication My Basic,Communication,2023-03-09,Per GB,982,USD,5,2.1.6,Legacy,Enterprise,Poor,True,High
+PID-18B6C0971A07,P00254,V0046,Marketing According Premium,Marketing,2021-06-19,Unlimited,33,USD,15,1.8.2,Legacy,Basic,Poor,True,Low
+PID-6985CF4C487F,P00255,V0046,Database Color Premium,Database,2022-01-18,Per Device,802,USD,8,1.7.0,Legacy,Basic,Good,False,Low
+PID-DBC07805F1B8,P00256,V0046,Analytics Share Premium,Analytics,2021-05-10,Unlimited,138,USD,13,4.1.4,Stable,Enterprise,Good,False,Medium
+PID-B52ABC1F9375,P00257,V0046,Analytics Explain Pro,Analytics,2020-08-17,Per Device,455,USD,5,1.6.2,Beta,Enterprise,Good,False,High
+PID-5AEF6EF29A6A,P00258,V0046,Productivity Relate Basic,Productivity,2020-08-08,Per Device,626,USD,15,3.0.0,Stable,Premium,Poor,False,Low
+PID-CA561A1E8932,P00259,V0046,Communication Less Premium,Communication,2021-09-17,Per Device,667,USD,8,3.8.1,Legacy,Enterprise,Excellent,False,Medium
+PID-C18DF4CD9D18,P00260,V0046,Operations Cultural Premium,Operations,2020-03-26,Unlimited,237,USD,3,3.8.6,Beta,Premium,Good,False,Medium
+PID-A48537EC6826,P00261,V0047,Communication Series Pro,Communication,2021-06-02,Per Hour,478,USD,5,4.9.6,Legacy,Premium,Excellent,False,Low
+PID-ADBC01192425,P00262,V0047,Development But Enterprise,Development,2020-10-12,Unlimited,926,USD,5,3.5.9,Legacy,Enterprise,Good,True,Medium
+PID-0C2FD224C7CA,P00263,V0047,Productivity Appear Basic,Productivity,2022-12-13,Unlimited,56,USD,13,5.5.4,Stable,Premium,Excellent,True,Medium
+PID-DDFA276B16C5,P00264,V0048,Finance Investment Premium,Finance,2021-07-28,Per Transaction,599,USD,6,1.2.4,Legacy,Enterprise,Poor,False,Medium
+PID-9A9484C2665C,P00265,V0048,Productivity Low Pro,Productivity,2024-09-29,Per Hour,775,USD,15,5.3.6,Legacy,Premium,Poor,False,Low
+PID-6A96B6FD1CCE,P00266,V0048,Productivity Area Premium,Productivity,2020-03-20,Per Transaction,341,USD,11,3.5.5,Legacy,Basic,Poor,False,High
+PID-2C2690557F25,P00267,V0048,HR Media Enterprise,HR,2021-06-21,Per Device,593,USD,5,4.8.7,Beta,Premium,Excellent,False,Low
+PID-A1B47561F751,P00268,V0049,Operations Fall Basic,Operations,2022-01-02,Per Hour,654,USD,6,2.5.6,Legacy,Basic,Good,False,Low
+PID-949E7CE1711B,P00269,V0049,Finance Economy Basic,Finance,2024-11-26,Per GB,302,USD,12,3.9.3,Beta,Basic,Excellent,True,Medium
+PID-8155D2BF1A6D,P00270,V0050,Marketing Fill Pro,Marketing,2023-09-22,Per GB,220,USD,11,4.9.1,Beta,Basic,Good,False,Medium
+PID-1D8094D390E5,P00271,V0050,Security Central Basic,Security,2024-03-18,Unlimited,883,USD,8,4.0.6,Beta,Enterprise,Poor,False,High
+PID-F703378CFADF,P00272,V0050,Development Local Pro,Development,2020-10-19,Per GB,90,USD,14,2.8.9,Legacy,Premium,Excellent,True,Low
+PID-B642FF1051BE,P00273,V0050,Security Effort Premium,Security,2023-02-16,Per GB,89,USD,13,2.1.2,Stable,Enterprise,Poor,False,High
+PID-AD2CFE6BD5A0,P00274,V0050,Development Finally Enterprise,Development,2022-06-03,Per GB,642,USD,12,3.4.2,Beta,Enterprise,Excellent,True,High
